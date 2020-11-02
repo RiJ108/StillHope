@@ -76,6 +76,7 @@ include CMakeFiles/StillHope_build_1.0.dir/progress.make
 include CMakeFiles/StillHope_build_1.0.dir/flags.make
 
 CMakeFiles/StillHope_build_1.0.dir/StillHope_build_1.0.cpp.obj: CMakeFiles/StillHope_build_1.0.dir/flags.make
+CMakeFiles/StillHope_build_1.0.dir/StillHope_build_1.0.cpp.obj: CMakeFiles/StillHope_build_1.0.dir/includes_CXX.rsp
 CMakeFiles/StillHope_build_1.0.dir/StillHope_build_1.0.cpp.obj: ../StillHope_build_1.0.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/StillHope_build_1.0.dir/StillHope_build_1.0.cpp.obj"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\StillHope_build_1.0.dir\StillHope_build_1.0.cpp.obj -c D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\StillHope_build_1.0.cpp
@@ -97,6 +98,9 @@ StillHope_build_1_0_EXTERNAL_OBJECTS =
 
 bin/StillHope_build_1.0.exe: CMakeFiles/StillHope_build_1.0.dir/StillHope_build_1.0.cpp.obj
 bin/StillHope_build_1.0.exe: CMakeFiles/StillHope_build_1.0.dir/build.make
+bin/StillHope_build_1.0.exe: lib/libwindow-d.dll.a
+bin/StillHope_build_1.0.exe: lib/libthread-d.dll.a
+bin/StillHope_build_1.0.exe: lib/libglad.dll.a
 bin/StillHope_build_1.0.exe: CMakeFiles/StillHope_build_1.0.dir/linklibs.rsp
 bin/StillHope_build_1.0.exe: CMakeFiles/StillHope_build_1.0.dir/objects1.rsp
 bin/StillHope_build_1.0.exe: CMakeFiles/StillHope_build_1.0.dir/link.txt

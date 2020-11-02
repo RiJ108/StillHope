@@ -4,7 +4,7 @@
 # compile CXX with C:/MinGW/bin/g++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = @CMakeFiles/StillHope_build_1.0.dir/includes_CXX.rsp
 
 CXX_FLAGS = -std=c++11 -g
 

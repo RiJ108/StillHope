@@ -10,10 +10,17 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../thread/include"
+  "thread"
+  "../window/include"
+  "window"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/window/CMakeFiles/window.dir/DependInfo.cmake"
+  "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/thread/CMakeFiles/thread.dir/DependInfo.cmake"
+  "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/CMakeFiles/glad.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -17,10 +17,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/CMake/share/cmake-3.18/Modules/CMakeRCInformation.cmake"
   "C:/CMake/share/cmake-3.18/Modules/CMakeSystemSpecificInformation.cmake"
   "C:/CMake/share/cmake-3.18/Modules/CMakeSystemSpecificInitialize.cmake"
+  "C:/CMake/share/cmake-3.18/Modules/CheckCCompilerFlag.cmake"
+  "C:/CMake/share/cmake-3.18/Modules/CheckCSourceCompiles.cmake"
+  "C:/CMake/share/cmake-3.18/Modules/CheckCXXCompilerFlag.cmake"
+  "C:/CMake/share/cmake-3.18/Modules/CheckCXXSourceCompiles.cmake"
   "C:/CMake/share/cmake-3.18/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "C:/CMake/share/cmake-3.18/Modules/Compiler/GNU-C.cmake"
   "C:/CMake/share/cmake-3.18/Modules/Compiler/GNU-CXX.cmake"
   "C:/CMake/share/cmake-3.18/Modules/Compiler/GNU.cmake"
+  "C:/CMake/share/cmake-3.18/Modules/GenerateExportHeader.cmake"
   "C:/CMake/share/cmake-3.18/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "C:/CMake/share/cmake-3.18/Modules/Platform/Windows-GNU-C-ABI.cmake"
   "C:/CMake/share/cmake-3.18/Modules/Platform/Windows-GNU-C.cmake"
@@ -30,11 +35,22 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/CMake/share/cmake-3.18/Modules/Platform/Windows-windres.cmake"
   "C:/CMake/share/cmake-3.18/Modules/Platform/Windows.cmake"
   "C:/CMake/share/cmake-3.18/Modules/Platform/WindowsPaths.cmake"
+  "C:/CMake/share/cmake-3.18/Modules/exportheader.cmake.in"
   "../CMakeLists.txt"
   "CMakeFiles/3.18.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.18.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.18.0/CMakeRCCompiler.cmake"
   "CMakeFiles/3.18.0/CMakeSystem.cmake"
+  "../thread/CMakeLists.txt"
+  "../thread/include/CMakeLists.txt"
+  "../thread/include/thread/CMakeLists.txt"
+  "../thread/src/CMakeLists.txt"
+  "../thread/src/thread/CMakeLists.txt"
+  "../window/CMakeLists.txt"
+  "../window/include/CMakeLists.txt"
+  "../window/include/window/CMakeLists.txt"
+  "../window/src/CMakeLists.txt"
+  "../window/src/window/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -46,10 +62,24 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "thread/thread_export.h"
+  "thread/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "thread/include/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "thread/include/thread/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "thread/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "thread/src/thread/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "window/window_export.h"
+  "window/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "window/include/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "window/include/window/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "window/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "window/src/window/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/glad.dir/DependInfo.cmake"
   "CMakeFiles/StillHope_build_1.0.dir/DependInfo.cmake"
+  "thread/CMakeFiles/thread.dir/DependInfo.cmake"
+  "window/CMakeFiles/window.dir/DependInfo.cmake"
   )

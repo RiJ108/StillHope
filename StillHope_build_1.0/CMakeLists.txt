@@ -19,8 +19,13 @@ add_library(
 
 add_executable(StillHope_build_1.0 StillHope_build_1.0.cpp)
 
+add_subdirectory("thread")
+add_subdirectory("window")
+
 target_link_libraries(
     StillHope_build_1.0
+    thread
+    window
     #libglfw3.a 
     #libgdi32.a
     #libfreetype.a

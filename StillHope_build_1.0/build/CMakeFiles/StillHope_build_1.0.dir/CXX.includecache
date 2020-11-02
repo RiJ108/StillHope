@@ -6,7 +6,31 @@
 
 #IncludeRegexTransform: 
 
+../thread/include/thread/thread.hpp
+pthread.h
+-
+semaphore.h
+-
+iostream
+-
+
+../window/include/window/window.hpp
+thread/thread.hpp
+../window/include/window/thread/thread.hpp
+iostream
+-
+glad/glad.h
+-
+GLFW/glfw3.h
+-
+iostream
+-
+
 D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/StillHope_build_1.0.cpp
 iostream
 -
+thread/thread.hpp
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/thread/thread.hpp
+window/window.hpp
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/window/window.hpp
 

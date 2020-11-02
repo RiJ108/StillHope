@@ -74,6 +74,40 @@ CMAKE_BINARY_DIR = D:\UserData\Documents\vscode-workspace\StillHope\StillHope_bu
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	C:\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	C:\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	C:\CMake\bin\cmake.exe -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	C:\CMake\bin\cmake.exe -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -95,6 +129,18 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	C:\CMake\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	C:\CMake\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -153,6 +199,32 @@ StillHope_build_1.0: cmake_check_build_system
 StillHope_build_1.0/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\StillHope_build_1.0.dir\build.make CMakeFiles/StillHope_build_1.0.dir/build
 .PHONY : StillHope_build_1.0/fast
+
+#=============================================================================
+# Target rules for targets named thread
+
+# Build rule for target.
+thread: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 thread
+.PHONY : thread
+
+# fast build rule for target.
+thread/fast:
+	$(MAKE) $(MAKESILENT) -f thread\CMakeFiles\thread.dir\build.make thread/CMakeFiles/thread.dir/build
+.PHONY : thread/fast
+
+#=============================================================================
+# Target rules for targets named window
+
+# Build rule for target.
+window: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 window
+.PHONY : window
+
+# fast build rule for target.
+window/fast:
+	$(MAKE) $(MAKESILENT) -f window\CMakeFiles\window.dir\build.make window/CMakeFiles/window.dir/build
+.PHONY : window/fast
 
 StillHope_build_1.0.obj: StillHope_build_1.0.cpp.obj
 
@@ -215,9 +287,15 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... StillHope_build_1.0
 	@echo ... glad
+	@echo ... thread
+	@echo ... window
 	@echo ... StillHope_build_1.0.obj
 	@echo ... StillHope_build_1.0.i
 	@echo ... StillHope_build_1.0.s

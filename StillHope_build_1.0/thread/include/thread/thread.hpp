@@ -13,6 +13,8 @@ class Thread{
 public:
     Thread();
     void set();
+    void create(void *run);
+    void join();
     void terminate();
     bool isTerminated();
 protected:

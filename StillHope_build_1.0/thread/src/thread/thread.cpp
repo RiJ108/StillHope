@@ -11,6 +11,17 @@ void Thread::set(){
     pthread_create(in_thread, NULL, (THREADFUNCPTR)&run, (void *)this);
 }
 
+void Thread::create(void *run){
+    shouldTerminate = false;
+    terminated = false;
+    cout << this << "_created" << endl;
+    pthread_create(in_thread, NULL, (THREADFUNCPTR)&run, (void *)this);
+}
+
+void Thread::join(){
+    pthread_join(*in_thread, (void**)NULL);
+}
+
 void Thread::terminate(){
     shouldTerminate = true;
 }

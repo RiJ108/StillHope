@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../thread/include/thread/thread.hpp
+pthread.h
+-
+semaphore.h
+-
+iostream
+-
+
+../window/include/window/window.hpp
+thread/thread.hpp
+../window/include/window/thread/thread.hpp
+iostream
+-
+glad/glad.h
+-
+GLFW/glfw3.h
+-
+iostream
+-
+
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/window/src/window/window.cpp
+window/window.hpp
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/window/src/window/window/window.hpp
+

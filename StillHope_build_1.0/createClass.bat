@@ -26,6 +26,9 @@ echo generate_export_header("${LIB_NAME}") >> CMakeLists.txt
 echo install(FILES "${CMAKE_CURRENT_BINARY_DIR}/${LIB_NAME}_export.h" DESTINATION "include") >> CMakeLists.txt
 echo add_subdirectory("include") >> CMakeLists.txt
 echo add_subdirectory("src") >> CMakeLists.txt
+echo target_link_libraries( >> CMakeLists.txt
+echo    "${LIB_NAME}" >> CMakeLists.txt
+echo ) >> CMakeLists.txt
 
 cd include
 mkdir %id%

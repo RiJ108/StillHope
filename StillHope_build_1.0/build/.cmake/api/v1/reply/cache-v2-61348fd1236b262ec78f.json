@@ -811,7 +811,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "11"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1328,6 +1328,30 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "COMPILER_HAS_DEPRECATED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Compiler support for a deprecated attribute"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "COMPILER_HAS_DEPRECATED_ATTR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Test COMPILER_HAS_DEPRECATED_ATTR"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
 		},
 		{
 			"name" : "StillHope_BINARY_DIR",

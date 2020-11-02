@@ -6,7 +6,17 @@
 },
 {
   "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build",
-  "command": "C:\\MinGW\\bin\\g++.exe   -std=c++11 -g -o CMakeFiles\\StillHope_build_1.0.dir\\StillHope_build_1.0.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.0\\StillHope_build_1.0.cpp",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/StillHope_build_1.0.dir/includes_CXX.rsp -std=c++11 -g -o CMakeFiles\\StillHope_build_1.0.dir\\StillHope_build_1.0.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.0\\StillHope_build_1.0.cpp",
   "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/StillHope_build_1.0.cpp"
+},
+{
+  "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/thread",
+  "command": "C:\\MinGW\\bin\\g++.exe -Dthread_EXPORTS @CMakeFiles/thread.dir/includes_CXX.rsp -std=c++11 -g -o CMakeFiles\\thread.dir\\src\\thread\\thread.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.0\\thread\\src\\thread\\thread.cpp",
+  "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/thread/src/thread/thread.cpp"
+},
+{
+  "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/window",
+  "command": "C:\\MinGW\\bin\\g++.exe -Dwindow_EXPORTS @CMakeFiles/window.dir/includes_CXX.rsp -std=c++11 -g -o CMakeFiles\\window.dir\\src\\window\\window.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.0\\window\\src\\window\\window.cpp",
+  "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/window/src/window/window.cpp"
 }
 ]

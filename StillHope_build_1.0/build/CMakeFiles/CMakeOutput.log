@@ -478,3 +478,34 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED_ATTR succeeded with the following output:
+Change Dir: D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_9572c/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_9572c.dir\build.make CMakeFiles/cmTC_9572c.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9572c.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe   -std=c++11 -DCOMPILER_HAS_DEPRECATED_ATTR -o CMakeFiles\cmTC_9572c.dir\src.cxx.obj -c D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles\CMakeTmp\src.cxx
+D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles\CMakeTmp\src.cxx: In function 'int main()':
+D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles\CMakeTmp\src.cxx:2:34: warning: 'int somefunc()' is deprecated [-Wdeprecated-declarations]
+    2 |     int main() { return somefunc();}
+      |                                  ^
+D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles\CMakeTmp\src.cxx:1:37: note: declared here
+    1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+      |                                     ^~~~~~~~
+D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles\CMakeTmp\src.cxx:2:34: warning: 'int somefunc()' is deprecated [-Wdeprecated-declarations]
+    2 |     int main() { return somefunc();}
+      |                                  ^
+D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles\CMakeTmp\src.cxx:1:37: note: declared here
+    1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+      |                                     ^~~~~~~~
+Linking CXX executable cmTC_9572c.exe
+C:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_9572c.dir\link.txt --verbose=1
+C:\CMake\bin\cmake.exe -E rm -f CMakeFiles\cmTC_9572c.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_9572c.dir/objects.a @CMakeFiles\cmTC_9572c.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -std=c++11 -DCOMPILER_HAS_DEPRECATED_ATTR -Wl,--whole-archive CMakeFiles\cmTC_9572c.dir/objects.a -Wl,--no-whole-archive -o cmTC_9572c.exe -Wl,--out-implib,libcmTC_9572c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_9572c.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+__attribute__((__deprecated__)) int somefunc() { return 0; }
+    int main() { return somefunc();}
