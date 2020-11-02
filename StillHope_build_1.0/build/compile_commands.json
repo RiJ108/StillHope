@@ -1,0 +1,12 @@
+[
+{
+  "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe -Dglad_EXPORTS  -g -o CMakeFiles\\glad.dir\\lib\\glad\\glad.c.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.0\\lib\\glad\\glad.c",
+  "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/lib/glad/glad.c"
+},
+{
+  "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -std=c++11 -g -o CMakeFiles\\StillHope_build_1.0.dir\\StillHope_build_1.0.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.0\\StillHope_build_1.0.cpp",
+  "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/StillHope_build_1.0.cpp"
+}
+]
