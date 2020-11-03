@@ -1,5 +1,4 @@
 #include <iostream>
-#include "thread/thread.hpp"
 #include "window/window.hpp"
 
 using namespace std;

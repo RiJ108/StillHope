@@ -74,12 +74,14 @@ CMAKE_BINARY_DIR = D:\UserData\Documents\vscode-workspace\StillHope\StillHope_bu
 all: CMakeFiles/glad.dir/all
 all: CMakeFiles/StillHope_build_1.0.dir/all
 all: thread/all
+all: mef/all
 all: window/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: thread/preinstall
+preinstall: mef/preinstall
 preinstall: window/preinstall
 
 .PHONY : preinstall
@@ -88,9 +90,105 @@ preinstall: window/preinstall
 clean: CMakeFiles/glad.dir/clean
 clean: CMakeFiles/StillHope_build_1.0.dir/clean
 clean: thread/clean
+clean: mef/clean
 clean: window/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory mef
+
+# Recursive "all" directory target.
+mef/all: mef/CMakeFiles/mef.dir/all
+mef/all: mef/include/all
+mef/all: mef/src/all
+
+.PHONY : mef/all
+
+# Recursive "preinstall" directory target.
+mef/preinstall: mef/include/preinstall
+mef/preinstall: mef/src/preinstall
+
+.PHONY : mef/preinstall
+
+# Recursive "clean" directory target.
+mef/clean: mef/CMakeFiles/mef.dir/clean
+mef/clean: mef/include/clean
+mef/clean: mef/src/clean
+
+.PHONY : mef/clean
+
+#=============================================================================
+# Directory level rules for directory mef/include
+
+# Recursive "all" directory target.
+mef/include/all: mef/include/mef/all
+
+.PHONY : mef/include/all
+
+# Recursive "preinstall" directory target.
+mef/include/preinstall: mef/include/mef/preinstall
+
+.PHONY : mef/include/preinstall
+
+# Recursive "clean" directory target.
+mef/include/clean: mef/include/mef/clean
+
+.PHONY : mef/include/clean
+
+#=============================================================================
+# Directory level rules for directory mef/include/mef
+
+# Recursive "all" directory target.
+mef/include/mef/all:
+
+.PHONY : mef/include/mef/all
+
+# Recursive "preinstall" directory target.
+mef/include/mef/preinstall:
+
+.PHONY : mef/include/mef/preinstall
+
+# Recursive "clean" directory target.
+mef/include/mef/clean:
+
+.PHONY : mef/include/mef/clean
+
+#=============================================================================
+# Directory level rules for directory mef/src
+
+# Recursive "all" directory target.
+mef/src/all: mef/src/mef/all
+
+.PHONY : mef/src/all
+
+# Recursive "preinstall" directory target.
+mef/src/preinstall: mef/src/mef/preinstall
+
+.PHONY : mef/src/preinstall
+
+# Recursive "clean" directory target.
+mef/src/clean: mef/src/mef/clean
+
+.PHONY : mef/src/clean
+
+#=============================================================================
+# Directory level rules for directory mef/src/mef
+
+# Recursive "all" directory target.
+mef/src/mef/all:
+
+.PHONY : mef/src/mef/all
+
+# Recursive "preinstall" directory target.
+mef/src/mef/preinstall:
+
+.PHONY : mef/src/mef/preinstall
+
+# Recursive "clean" directory target.
+mef/src/mef/clean:
+
+.PHONY : mef/src/mef/clean
 
 #=============================================================================
 # Directory level rules for directory thread
@@ -315,6 +413,7 @@ CMakeFiles/glad.dir/clean:
 # All Build rule for target.
 CMakeFiles/StillHope_build_1.0.dir/all: CMakeFiles/glad.dir/all
 CMakeFiles/StillHope_build_1.0.dir/all: thread/CMakeFiles/thread.dir/all
+CMakeFiles/StillHope_build_1.0.dir/all: mef/CMakeFiles/mef.dir/all
 CMakeFiles/StillHope_build_1.0.dir/all: window/CMakeFiles/window.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\StillHope_build_1.0.dir\build.make CMakeFiles/StillHope_build_1.0.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\StillHope_build_1.0.dir\build.make CMakeFiles/StillHope_build_1.0.dir/build
@@ -323,7 +422,7 @@ CMakeFiles/StillHope_build_1.0.dir/all: window/CMakeFiles/window.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/StillHope_build_1.0.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/StillHope_build_1.0.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 0
 .PHONY : CMakeFiles/StillHope_build_1.0.dir/rule
@@ -345,7 +444,7 @@ CMakeFiles/StillHope_build_1.0.dir/clean:
 thread/CMakeFiles/thread.dir/all:
 	$(MAKE) $(MAKESILENT) -f thread\CMakeFiles\thread.dir\build.make thread/CMakeFiles/thread.dir/depend
 	$(MAKE) $(MAKESILENT) -f thread\CMakeFiles\thread.dir\build.make thread/CMakeFiles/thread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles --progress-num=5,6 "Built target thread"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles --progress-num=7,8 "Built target thread"
 .PHONY : thread/CMakeFiles/thread.dir/all
 
 # Build rule for subdir invocation for target.
@@ -366,19 +465,47 @@ thread/CMakeFiles/thread.dir/clean:
 .PHONY : thread/CMakeFiles/thread.dir/clean
 
 #=============================================================================
+# Target rules for target mef/CMakeFiles/mef.dir
+
+# All Build rule for target.
+mef/CMakeFiles/mef.dir/all: thread/CMakeFiles/thread.dir/all
+	$(MAKE) $(MAKESILENT) -f mef\CMakeFiles\mef.dir\build.make mef/CMakeFiles/mef.dir/depend
+	$(MAKE) $(MAKESILENT) -f mef\CMakeFiles\mef.dir\build.make mef/CMakeFiles/mef.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles --progress-num=5,6 "Built target mef"
+.PHONY : mef/CMakeFiles/mef.dir/all
+
+# Build rule for subdir invocation for target.
+mef/CMakeFiles/mef.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mef/CMakeFiles/mef.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 0
+.PHONY : mef/CMakeFiles/mef.dir/rule
+
+# Convenience name for target.
+mef: mef/CMakeFiles/mef.dir/rule
+
+.PHONY : mef
+
+# clean rule for target.
+mef/CMakeFiles/mef.dir/clean:
+	$(MAKE) $(MAKESILENT) -f mef\CMakeFiles\mef.dir\build.make mef/CMakeFiles/mef.dir/clean
+.PHONY : mef/CMakeFiles/mef.dir/clean
+
+#=============================================================================
 # Target rules for target window/CMakeFiles/window.dir
 
 # All Build rule for target.
 window/CMakeFiles/window.dir/all: CMakeFiles/glad.dir/all
 window/CMakeFiles/window.dir/all: thread/CMakeFiles/thread.dir/all
+window/CMakeFiles/window.dir/all: mef/CMakeFiles/mef.dir/all
 	$(MAKE) $(MAKESILENT) -f window\CMakeFiles\window.dir\build.make window/CMakeFiles/window.dir/depend
 	$(MAKE) $(MAKESILENT) -f window\CMakeFiles\window.dir\build.make window/CMakeFiles/window.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles --progress-num=7,8 "Built target window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles --progress-num=9,10 "Built target window"
 .PHONY : window/CMakeFiles/window.dir/all
 
 # Build rule for subdir invocation for target.
 window/CMakeFiles/window.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 window/CMakeFiles/window.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 0
 .PHONY : window/CMakeFiles/window.dir/rule

@@ -20,6 +20,7 @@ add_library(
 add_executable(StillHope_build_1.0 StillHope_build_1.0.cpp)
 
 add_subdirectory("thread")
+add_subdirectory("mef")
 add_subdirectory("window")
 
 target_link_libraries(

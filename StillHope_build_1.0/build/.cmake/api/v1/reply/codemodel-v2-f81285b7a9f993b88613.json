@@ -9,7 +9,8 @@
 					"childIndexes" : 
 					[
 						1,
-						6
+						6,
+						11
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -41,7 +42,7 @@
 					"source" : "thread",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -97,7 +98,7 @@
 					"source" : "thread/src/thread"
 				},
 				{
-					"build" : "window",
+					"build" : "mef",
 					"childIndexes" : 
 					[
 						7,
@@ -110,14 +111,14 @@
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "window",
+					"source" : "mef",
 					"targetIndexes" : 
 					[
-						3
+						2
 					]
 				},
 				{
-					"build" : "window/include",
+					"build" : "mef/include",
 					"childIndexes" : 
 					[
 						8
@@ -129,10 +130,10 @@
 					},
 					"parentIndex" : 6,
 					"projectIndex" : 0,
-					"source" : "window/include"
+					"source" : "mef/include"
 				},
 				{
-					"build" : "window/include/window",
+					"build" : "mef/include/mef",
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
@@ -140,10 +141,10 @@
 					},
 					"parentIndex" : 7,
 					"projectIndex" : 0,
-					"source" : "window/include/window"
+					"source" : "mef/include/mef"
 				},
 				{
-					"build" : "window/src",
+					"build" : "mef/src",
 					"childIndexes" : 
 					[
 						10
@@ -155,6 +156,78 @@
 					},
 					"parentIndex" : 6,
 					"projectIndex" : 0,
+					"source" : "mef/src"
+				},
+				{
+					"build" : "mef/src/mef",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 0,
+					"source" : "mef/src/mef"
+				},
+				{
+					"build" : "window",
+					"childIndexes" : 
+					[
+						12,
+						14
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "window",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "window/include",
+					"childIndexes" : 
+					[
+						13
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 0,
+					"source" : "window/include"
+				},
+				{
+					"build" : "window/include/window",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 0,
+					"source" : "window/include/window"
+				},
+				{
+					"build" : "window/src",
+					"childIndexes" : 
+					[
+						15
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 0,
 					"source" : "window/src"
 				},
 				{
@@ -164,7 +237,7 @@
 					{
 						"string" : "3.18.0"
 					},
-					"parentIndex" : 9,
+					"parentIndex" : 14,
 					"projectIndex" : 0,
 					"source" : "window/src/window"
 				}
@@ -185,7 +258,12 @@
 						7,
 						8,
 						9,
-						10
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
 					],
 					"name" : "StillHope",
 					"targetIndexes" : 
@@ -193,7 +271,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -202,7 +281,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "StillHope_build_1.0::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-StillHope_build_1.0-Debug-055002585efa79022bf4.json",
+					"jsonFile" : "target-StillHope_build_1.0-Debug-8ad8068cc5df0a546c4c.json",
 					"name" : "StillHope_build_1.0",
 					"projectIndex" : 0
 				},
@@ -214,6 +293,13 @@
 					"projectIndex" : 0
 				},
 				{
+					"directoryIndex" : 6,
+					"id" : "mef::@becf9c71a13ab92314e7",
+					"jsonFile" : "target-mef-Debug-e81fd81ca944cea96939.json",
+					"name" : "mef",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 1,
 					"id" : "thread::@1994991b6c1bd8685afc",
 					"jsonFile" : "target-thread-Debug-7206c074b3686c25943a.json",
@@ -221,9 +307,9 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 6,
+					"directoryIndex" : 11,
 					"id" : "window::@042a9f56126fb90ddaf9",
-					"jsonFile" : "target-window-Debug-c29c88ba1ca27f651831.json",
+					"jsonFile" : "target-window-Debug-8094a5551f21ea091c96.json",
 					"name" : "window",
 					"projectIndex" : 0
 				}

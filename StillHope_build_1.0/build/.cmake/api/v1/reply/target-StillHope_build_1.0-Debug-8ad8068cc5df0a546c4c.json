@@ -34,7 +34,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 25,
+				"line" : 26,
 				"parent" : 0
 			}
 		]
@@ -65,6 +65,14 @@
 				{
 					"backtrace" : 2,
 					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/window"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/mef/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/mef"
 				}
 			],
 			"language" : "CXX",
@@ -83,6 +91,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "thread::@1994991b6c1bd8685afc"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "mef::@becf9c71a13ab92314e7"
 		},
 		{
 			"backtrace" : 2,
@@ -108,6 +120,26 @@
 				"role" : "libraries"
 			},
 			{
+				"fragment" : "-Wl,-Bstatic",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lglfw3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lgdi32",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bdynamic",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "lib\\libmef-d.dll.a",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 2,
 				"fragment" : "lib\\libthread-d.dll.a",
 				"role" : "libraries"
@@ -118,14 +150,6 @@
 			},
 			{
 				"fragment" : "-lpthread",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "-lglfw3",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "-lgdi32",
 				"role" : "libraries"
 			},
 			{

@@ -1,7 +1,7 @@
 #ifndef WINDOW_HPP
 #define WINDOW_HPP
 
-#include "thread/thread.hpp"
+#include "mef/mef.hpp"
 #include <iostream>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -26,6 +26,8 @@ private:
     float deltaTime = 0.0f;
     float lastFrame = 0.0f;
     float currentFrame = 0.0f;
+
+    void processInputs();
 
  //**Input variable
     bool enter = false, escape = false;

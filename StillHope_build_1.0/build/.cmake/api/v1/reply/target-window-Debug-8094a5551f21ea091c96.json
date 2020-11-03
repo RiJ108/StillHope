@@ -89,6 +89,14 @@
 				},
 				{
 					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/mef/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/mef"
+				},
+				{
+					"backtrace" : 2,
 					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/thread/include"
 				},
 				{
@@ -112,6 +120,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "thread::@1994991b6c1bd8685afc"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "mef::@becf9c71a13ab92314e7"
 		}
 	],
 	"id" : "window::@042a9f56126fb90ddaf9",
@@ -143,12 +155,16 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "..\\lib\\libthread-d.dll.a",
+				"fragment" : "..\\lib\\libmef-d.dll.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
 				"fragment" : "..\\lib\\libglad.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "..\\lib\\libthread-d.dll.a",
 				"role" : "libraries"
 			},
 			{

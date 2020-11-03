@@ -30,11 +30,13 @@ void Window::init(){
 }
 
 void Window::loop(){
+    Mef mef;
     while(!glfwWindowShouldClose(window)){
         //***Process timing
         currentFrame = glfwGetTime();
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
+        processInputs();
 
         //***Clearing buffers
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -49,4 +51,13 @@ void Window::loop(){
 void Window::run(){
     init();
     loop();
+}
+
+void Window::processInputs(){
+    if(glfwGetKey(window, GLFW_KEY_ENTER) == GLFW_PRESS){
+        cout << "GLFW_KEY_ENTER Press" << endl;
+    }
+    if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS){
+        glfwSetWindowShouldClose(window, true);
+    }
 }
