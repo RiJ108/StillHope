@@ -1,11 +1,11 @@
 #include <iostream>
-#include "window/window.hpp"
+#include "mef/mef.hpp"
 
 using namespace std;
 
 int main(void){
     cout << "STILLHOPE.CPP::main()" << endl;
-    Window window;
-    window.run();
+    Mef mef;
+    mef.init();
     return 1;
 }

@@ -15,13 +15,18 @@
   "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/thread/src/thread/thread.cpp"
 },
 {
-  "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/mef",
-  "command": "C:\\MinGW\\bin\\g++.exe -Dmef_EXPORTS @CMakeFiles/mef.dir/includes_CXX.rsp -std=c++11 -g -o CMakeFiles\\mef.dir\\src\\mef\\mef.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.0\\mef\\src\\mef\\mef.cpp",
-  "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/mef/src/mef/mef.cpp"
+  "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/phyEngine",
+  "command": "C:\\MinGW\\bin\\g++.exe -DphyEngine_EXPORTS @CMakeFiles/phyEngine.dir/includes_CXX.rsp -std=c++11 -g -o CMakeFiles\\phyEngine.dir\\src\\phyEngine\\phyEngine.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.0\\phyEngine\\src\\phyEngine\\phyEngine.cpp",
+  "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/phyEngine/src/phyEngine/phyEngine.cpp"
 },
 {
   "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/window",
   "command": "C:\\MinGW\\bin\\g++.exe -Dwindow_EXPORTS @CMakeFiles/window.dir/includes_CXX.rsp -std=c++11 -g -o CMakeFiles\\window.dir\\src\\window\\window.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.0\\window\\src\\window\\window.cpp",
   "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/window/src/window/window.cpp"
+},
+{
+  "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/mef",
+  "command": "C:\\MinGW\\bin\\g++.exe -Dmef_EXPORTS @CMakeFiles/mef.dir/includes_CXX.rsp -std=c++11 -g -o CMakeFiles\\mef.dir\\src\\mef\\mef.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.0\\mef\\src\\mef\\mef.cpp",
+  "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/mef/src/mef/mef.cpp"
 }
 ]

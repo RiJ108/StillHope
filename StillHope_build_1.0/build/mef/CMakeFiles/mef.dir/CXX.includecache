@@ -7,14 +7,26 @@
 #IncludeRegexTransform: 
 
 ../mef/include/mef/mef.hpp
-thread/thread.hpp
-../mef/include/mef/thread/thread.hpp
+window/window.hpp
+../mef/include/mef/window/window.hpp
 
 ../thread/include/thread/thread.hpp
 pthread.h
 -
 semaphore.h
 -
+iostream
+-
+
+../window/include/window/window.hpp
+iostream
+-
+glad/glad.h
+-
+GLFW/glfw3.h
+-
+thread/thread.hpp
+../window/include/window/thread/thread.hpp
 iostream
 -
 

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../phyEngine/include/phyEngine/phyEngine.hpp
+thread/thread.hpp
+../phyEngine/include/phyEngine/thread/thread.hpp
+
+../thread/include/thread/thread.hpp
+pthread.h
+-
+semaphore.h
+-
+iostream
+-
+
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/phyEngine/src/phyEngine/phyEngine.cpp
+phyEngine/phyEngine.hpp
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/phyEngine/src/phyEngine/phyEngine/phyEngine.hpp
+

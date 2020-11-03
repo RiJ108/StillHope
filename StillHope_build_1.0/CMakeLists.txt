@@ -20,13 +20,13 @@ add_library(
 add_executable(StillHope_build_1.0 StillHope_build_1.0.cpp)
 
 add_subdirectory("thread")
-add_subdirectory("mef")
+add_subdirectory("phyEngine")
 add_subdirectory("window")
+add_subdirectory("mef")
 
 target_link_libraries(
     StillHope_build_1.0
-    thread
-    window
+    mef
     #libglfw3.a 
     #libgdi32.a
     #libfreetype.a

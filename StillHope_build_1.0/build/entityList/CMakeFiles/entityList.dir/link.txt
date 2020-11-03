@@ -1,0 +1,3 @@
+C:\CMake\bin\cmake.exe -E rm -f CMakeFiles\entityList.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\entityList.dir/objects.a @CMakeFiles\entityList.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -std=c++11 -g -shared -o ..\bin\libentityList-d.dll -Wl,--out-implib,..\lib\libentityList-d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\entityList.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\entityList.dir\linklibs.rsp

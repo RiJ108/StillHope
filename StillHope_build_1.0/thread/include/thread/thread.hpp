@@ -17,13 +17,14 @@ public:
     void join();
     void terminate();
     bool isTerminated();
-protected:
-private:
-    pthread_t *in_thread;
+    pthread_t *in_thread = nullptr;
     bool shouldTerminate;
     bool terminated;
+protected:
+private:  
+    void init(void *obj_param);
+    void exe(void *obj_param);
     void run(void *obj_param);
-    void loop(void *obj_param);
 };
 
 #endif 

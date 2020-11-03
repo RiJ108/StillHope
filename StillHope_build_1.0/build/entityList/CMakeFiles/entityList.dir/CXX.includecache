@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../entityElement/include/entityElement/entityElement.hpp
+iostream
+-
+
+../entityList/include/entityList/entityList.hpp
+entityElement/entityElement.hpp
+../entityList/include/entityList/entityElement/entityElement.hpp
+string
+-
+
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/entityList/src/entityList/entityList.cpp
+entityList/entityList.hpp
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/entityList/src/entityList/entityList/entityList.hpp
+

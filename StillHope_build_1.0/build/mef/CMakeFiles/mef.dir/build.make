@@ -98,6 +98,8 @@ mef_EXTERNAL_OBJECTS =
 
 bin/libmef-d.dll: mef/CMakeFiles/mef.dir/src/mef/mef.cpp.obj
 bin/libmef-d.dll: mef/CMakeFiles/mef.dir/build.make
+bin/libmef-d.dll: lib/libwindow-d.dll.a
+bin/libmef-d.dll: lib/libglad.dll.a
 bin/libmef-d.dll: lib/libthread-d.dll.a
 bin/libmef-d.dll: mef/CMakeFiles/mef.dir/linklibs.rsp
 bin/libmef-d.dll: mef/CMakeFiles/mef.dir/objects1.rsp

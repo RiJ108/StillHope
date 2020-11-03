@@ -7,8 +7,8 @@
 #IncludeRegexTransform: 
 
 ../mef/include/mef/mef.hpp
-thread/thread.hpp
-../mef/include/mef/thread/thread.hpp
+window/window.hpp
+../mef/include/mef/window/window.hpp
 
 ../thread/include/thread/thread.hpp
 pthread.h
@@ -19,20 +19,20 @@ iostream
 -
 
 ../window/include/window/window.hpp
-mef/mef.hpp
-../window/include/window/mef/mef.hpp
 iostream
 -
 glad/glad.h
 -
 GLFW/glfw3.h
 -
+thread/thread.hpp
+../window/include/window/thread/thread.hpp
 iostream
 -
 
 D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/StillHope_build_1.0.cpp
 iostream
 -
-window/window.hpp
-D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/window/window.hpp
+mef/mef.hpp
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/mef/mef.hpp
 

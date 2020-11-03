@@ -23,6 +23,6 @@ target_link_libraries(
     "${LIB_NAME}"
     libglfw3.a 
     libgdi32.a
-    mef
     glad
+    thread
 ) 

@@ -1,1 +1,1 @@
- -Wl,-Bstatic -lglfw3 -lgdi32 -Wl,-Bdynamic ../lib/libmef-d.dll.a ../lib/libglad.dll.a ../lib/libthread-d.dll.a -Wl,-Bstatic -lpthread -Wl,-Bdynamic -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ -Wl,-Bstatic -lglfw3 -lgdi32 -Wl,-Bdynamic ../lib/libglad.dll.a ../lib/libthread-d.dll.a -Wl,-Bstatic -lpthread -Wl,-Bdynamic -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

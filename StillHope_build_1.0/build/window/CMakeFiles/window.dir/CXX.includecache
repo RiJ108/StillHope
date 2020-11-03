@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../mef/include/mef/mef.hpp
-thread/thread.hpp
-../mef/include/mef/thread/thread.hpp
-
 ../thread/include/thread/thread.hpp
 pthread.h
 -
@@ -19,14 +15,14 @@ iostream
 -
 
 ../window/include/window/window.hpp
-mef/mef.hpp
-../window/include/window/mef/mef.hpp
 iostream
 -
 glad/glad.h
 -
 GLFW/glfw3.h
 -
+thread/thread.hpp
+../window/include/window/thread/thread.hpp
 iostream
 -
 

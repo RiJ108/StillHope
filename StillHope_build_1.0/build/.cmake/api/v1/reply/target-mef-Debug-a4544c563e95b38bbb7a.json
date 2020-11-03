@@ -1,0 +1,225 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bin/libmef-d.dll"
+		},
+		{
+			"path" : "lib/libmef-d.dll.a"
+		},
+		{
+			"path" : "bin/libmef-d.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_include_directories",
+			"add_subdirectory"
+		],
+		"files" : 
+		[
+			"mef/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++11 -g"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "mef_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/mef/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/mef"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/window/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/window"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/thread/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/thread"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "glad::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "thread::@1994991b6c1bd8685afc"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "window::@042a9f56126fb90ddaf9"
+		}
+	],
+	"id" : "mef::@becf9c71a13ab92314e7",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "..\\lib\\libwindow-d.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bstatic",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lglfw3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lgdi32",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bdynamic",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "..\\lib\\libglad.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "..\\lib\\libthread-d.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bstatic",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bdynamic",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "mef",
+	"nameOnDisk" : "libmef-d.dll",
+	"paths" : 
+	{
+		"build" : "mef",
+		"source" : "mef"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"path" : "mef/include/mef/mef.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "mef/src/mef/mef.cpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

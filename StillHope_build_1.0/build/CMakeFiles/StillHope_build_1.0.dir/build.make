@@ -98,10 +98,10 @@ StillHope_build_1_0_EXTERNAL_OBJECTS =
 
 bin/StillHope_build_1.0.exe: CMakeFiles/StillHope_build_1.0.dir/StillHope_build_1.0.cpp.obj
 bin/StillHope_build_1.0.exe: CMakeFiles/StillHope_build_1.0.dir/build.make
-bin/StillHope_build_1.0.exe: lib/libwindow-d.dll.a
 bin/StillHope_build_1.0.exe: lib/libmef-d.dll.a
-bin/StillHope_build_1.0.exe: lib/libthread-d.dll.a
+bin/StillHope_build_1.0.exe: lib/libwindow-d.dll.a
 bin/StillHope_build_1.0.exe: lib/libglad.dll.a
+bin/StillHope_build_1.0.exe: lib/libthread-d.dll.a
 bin/StillHope_build_1.0.exe: CMakeFiles/StillHope_build_1.0.dir/linklibs.rsp
 bin/StillHope_build_1.0.exe: CMakeFiles/StillHope_build_1.0.dir/objects1.rsp
 bin/StillHope_build_1.0.exe: CMakeFiles/StillHope_build_1.0.dir/link.txt
