@@ -1,3 +1,3 @@
 C:\CMake\bin\cmake.exe -E rm -f CMakeFiles\StillHope_build_1.0.dir/objects.a
 C:\MinGW\bin\ar.exe cr CMakeFiles\StillHope_build_1.0.dir/objects.a @CMakeFiles\StillHope_build_1.0.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -std=c++11 -g -Wl,--whole-archive CMakeFiles\StillHope_build_1.0.dir/objects.a -Wl,--no-whole-archive -o bin\StillHope_build_1.0.exe -Wl,--out-implib,lib\libStillHope_build_1.0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\StillHope_build_1.0.dir\linklibs.rsp
+C:\MinGW\bin\g++.exe -std=c++0x -g -Wl,--whole-archive CMakeFiles\StillHope_build_1.0.dir/objects.a -Wl,--no-whole-archive -o bin\StillHope_build_1.0.exe -Wl,--out-implib,lib\libStillHope_build_1.0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\StillHope_build_1.0.dir\linklibs.rsp

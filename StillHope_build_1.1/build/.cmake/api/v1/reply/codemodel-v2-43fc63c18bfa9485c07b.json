@@ -1,0 +1,416 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						6,
+						11,
+						16
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "threadHandler",
+					"childIndexes" : 
+					[
+						2,
+						4
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "threadHandler",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "threadHandler/include",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "threadHandler/include"
+				},
+				{
+					"build" : "threadHandler/include/threadHandler",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "threadHandler/include/threadHandler"
+				},
+				{
+					"build" : "threadHandler/src",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "threadHandler/src"
+				},
+				{
+					"build" : "threadHandler/src/threadHandler",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "threadHandler/src/threadHandler"
+				},
+				{
+					"build" : "shader",
+					"childIndexes" : 
+					[
+						7,
+						9
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "shader",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "shader/include",
+					"childIndexes" : 
+					[
+						8
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 0,
+					"source" : "shader/include"
+				},
+				{
+					"build" : "shader/include/shader",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 0,
+					"source" : "shader/include/shader"
+				},
+				{
+					"build" : "shader/src",
+					"childIndexes" : 
+					[
+						10
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 0,
+					"source" : "shader/src"
+				},
+				{
+					"build" : "shader/src/shader",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 0,
+					"source" : "shader/src/shader"
+				},
+				{
+					"build" : "window",
+					"childIndexes" : 
+					[
+						12,
+						14
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "window",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "window/include",
+					"childIndexes" : 
+					[
+						13
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 0,
+					"source" : "window/include"
+				},
+				{
+					"build" : "window/include/window",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 0,
+					"source" : "window/include/window"
+				},
+				{
+					"build" : "window/src",
+					"childIndexes" : 
+					[
+						15
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 0,
+					"source" : "window/src"
+				},
+				{
+					"build" : "window/src/window",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 14,
+					"projectIndex" : 0,
+					"source" : "window/src/window"
+				},
+				{
+					"build" : "mef",
+					"childIndexes" : 
+					[
+						17,
+						19
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "mef",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "mef/include",
+					"childIndexes" : 
+					[
+						18
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 0,
+					"source" : "mef/include"
+				},
+				{
+					"build" : "mef/include/mef",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 0,
+					"source" : "mef/include/mef"
+				},
+				{
+					"build" : "mef/src",
+					"childIndexes" : 
+					[
+						20
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 0,
+					"source" : "mef/src"
+				},
+				{
+					"build" : "mef/src/mef",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 19,
+					"projectIndex" : 0,
+					"source" : "mef/src/mef"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					],
+					"name" : "StillHope",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "StillHope_build_1.1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-StillHope_build_1.1-Debug-4f3ed802495bbe6e53e1.json",
+					"name" : "StillHope_build_1.1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "glad::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-glad-Debug-9fd3996a34614d05c70f.json",
+					"name" : "glad",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "mef::@becf9c71a13ab92314e7",
+					"jsonFile" : "target-mef-Debug-2f01966aa0f2947eef00.json",
+					"name" : "mef",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "shader::@2bbbf1053401b8be33b8",
+					"jsonFile" : "target-shader-Debug-0f8180dce186012c79b7.json",
+					"name" : "shader",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "threadHandler::@1fe462f3503bd01ee3f3",
+					"jsonFile" : "target-threadHandler-Debug-e8830970ce2a76a46364.json",
+					"name" : "threadHandler",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "window::@042a9f56126fb90ddaf9",
+					"jsonFile" : "target-window-Debug-ad9d540f8995497976bf.json",
+					"name" : "window",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build",
+		"source" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

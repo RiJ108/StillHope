@@ -1,0 +1,42 @@
+
+#ifndef THREADHANDLER_EXPORT_H
+#define THREADHANDLER_EXPORT_H
+
+#ifdef THREADHANDLER_STATIC_DEFINE
+#  define THREADHANDLER_EXPORT
+#  define THREADHANDLER_NO_EXPORT
+#else
+#  ifndef THREADHANDLER_EXPORT
+#    ifdef threadHandler_EXPORTS
+        /* We are building this library */
+#      define THREADHANDLER_EXPORT __declspec(dllexport)
+#    else
+        /* We are using this library */
+#      define THREADHANDLER_EXPORT __declspec(dllimport)
+#    endif
+#  endif
+
+#  ifndef THREADHANDLER_NO_EXPORT
+#    define THREADHANDLER_NO_EXPORT 
+#  endif
+#endif
+
+#ifndef THREADHANDLER_DEPRECATED
+#  define THREADHANDLER_DEPRECATED __attribute__ ((__deprecated__))
+#endif
+
+#ifndef THREADHANDLER_DEPRECATED_EXPORT
+#  define THREADHANDLER_DEPRECATED_EXPORT THREADHANDLER_EXPORT THREADHANDLER_DEPRECATED
+#endif
+
+#ifndef THREADHANDLER_DEPRECATED_NO_EXPORT
+#  define THREADHANDLER_DEPRECATED_NO_EXPORT THREADHANDLER_NO_EXPORT THREADHANDLER_DEPRECATED
+#endif
+
+#if 0 /* DEFINE_NO_DEPRECATED */
+#  ifndef THREADHANDLER_NO_DEPRECATED
+#    define THREADHANDLER_NO_DEPRECATED
+#  endif
+#endif
+
+#endif /* THREADHANDLER_EXPORT_H */

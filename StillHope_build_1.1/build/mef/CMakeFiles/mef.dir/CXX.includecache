@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../mef/include/mef/mef.hpp
+threadHandler/threadHandler.hpp
+../mef/include/mef/threadHandler/threadHandler.hpp
+
+../threadHandler/include/threadHandler/threadHandler.hpp
+iostream
+-
+pthread.h
+-
+semaphore.h
+-
+
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/mef/src/mef/mef.cpp
+mef/mef.hpp
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/mef/src/mef/mef/mef.hpp
+

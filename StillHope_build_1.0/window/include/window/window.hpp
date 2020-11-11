@@ -4,21 +4,22 @@
 #include <iostream>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include "thread/thread.hpp"
 #include <iostream>
 
 using namespace std;
 
-class Window: public Thread{
+class Window{
 public:
     Window();
-    void set();
-    void init(void *obj_param);
-    void exe(void *obj_param);
-    void* run(void *obj_param);
+    void run();
+    void join();
     GLFWwindow* getWindow();
 protected:
 private:
+    void init();
+    void* loop();
+    void processInputs();
+
     GLFWwindow* window;
     string title = "StillHope";
     string build = "build_1.0";

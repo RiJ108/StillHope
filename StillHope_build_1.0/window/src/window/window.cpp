@@ -2,9 +2,10 @@
 
 Window::Window(){
     cout << "WINDOW::Window()" << endl;
+    init();
 }
 
-void Window::init(void *obj_param){
+void Window::init(){
     //**Initiate glfw
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -29,12 +30,14 @@ void Window::init(void *obj_param){
     glEnable(GL_DEPTH_TEST);
 }
 
-void Window::exe(void *obj_param){
-    //while(!glfwWindowShouldClose(window)){
+void* Window::loop(){
+    while(!glfwWindowShouldClose(window)){
         //***Process timing
         currentFrame = glfwGetTime();
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
+
+        processInputs();
 
         //***Clearing buffers
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -43,23 +46,26 @@ void Window::exe(void *obj_param){
         //***Polling and swapping of buffers
         glfwSwapBuffers(window);
         glfwPollEvents();
-    //}
+    }
 }
 
-void* Window::run(void *obj_param){
+/*void Window::run(){
     cout << "WINDOW::run()" << endl;
-    Thread *this_ = (Thread*)obj_param;
-    this_->terminated = false;
-    this_->shouldTerminate = false;
-    init(obj_param);
-    while(!this_->shouldTerminate & !glfwWindowShouldClose(window)){
-        exe(obj_param);
-        //cout << this_ << "_running..." << endl;
-    }
-    this_->terminated = true;
-    cout << this_ << "_terminated" << endl;
-}
+    inThread  = new pthread_t();
+    pthread_create(inThread, NULL, (THREADFUNCPTR)loop(), (void *)this);
+    cout << this << "_created and launched" << endl;
+}*
+
+void Window::join(){
+    pthread_join(*inThread, NULL);
+}*/
 
 GLFWwindow* Window::getWindow(){
     return window;
+}
+
+void Window::processInputs(){
+    if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS){
+        glfwSetWindowShouldClose(window, true);
+    }
 }

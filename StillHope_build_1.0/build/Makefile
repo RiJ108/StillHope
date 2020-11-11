@@ -201,45 +201,6 @@ StillHope_build_1.0/fast:
 .PHONY : StillHope_build_1.0/fast
 
 #=============================================================================
-# Target rules for targets named thread
-
-# Build rule for target.
-thread: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 thread
-.PHONY : thread
-
-# fast build rule for target.
-thread/fast:
-	$(MAKE) $(MAKESILENT) -f thread\CMakeFiles\thread.dir\build.make thread/CMakeFiles/thread.dir/build
-.PHONY : thread/fast
-
-#=============================================================================
-# Target rules for targets named phyEngine
-
-# Build rule for target.
-phyEngine: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 phyEngine
-.PHONY : phyEngine
-
-# fast build rule for target.
-phyEngine/fast:
-	$(MAKE) $(MAKESILENT) -f phyEngine\CMakeFiles\phyEngine.dir\build.make phyEngine/CMakeFiles/phyEngine.dir/build
-.PHONY : phyEngine/fast
-
-#=============================================================================
-# Target rules for targets named window
-
-# Build rule for target.
-window: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 window
-.PHONY : window
-
-# fast build rule for target.
-window/fast:
-	$(MAKE) $(MAKESILENT) -f window\CMakeFiles\window.dir\build.make window/CMakeFiles/window.dir/build
-.PHONY : window/fast
-
-#=============================================================================
 # Target rules for targets named mef
 
 # Build rule for target.
@@ -321,9 +282,6 @@ help:
 	@echo ... StillHope_build_1.0
 	@echo ... glad
 	@echo ... mef
-	@echo ... phyEngine
-	@echo ... thread
-	@echo ... window
 	@echo ... StillHope_build_1.0.obj
 	@echo ... StillHope_build_1.0.i
 	@echo ... StillHope_build_1.0.s

@@ -24,5 +24,5 @@ target_link_libraries(
     libglfw3.a 
     libgdi32.a
     glad
-    thread
+    pthread.a
 ) 

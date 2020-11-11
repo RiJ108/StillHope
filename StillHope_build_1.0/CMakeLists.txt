@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.18.0)
 project(StillHope VERSION 1.0)
 
-set(CMAKE_CXX_FLAGS "-std=c++11")
+set(CMAKE_CXX_FLAGS "-std=c++0x")
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
@@ -16,13 +16,9 @@ add_library(
     lib/glad/glad.h
     lib/glad/glad.c
 )
+add_subdirectory("mef")
 
 add_executable(StillHope_build_1.0 StillHope_build_1.0.cpp)
-
-add_subdirectory("thread")
-add_subdirectory("phyEngine")
-add_subdirectory("window")
-add_subdirectory("mef")
 
 target_link_libraries(
     StillHope_build_1.0

@@ -12,18 +12,11 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../mef/include"
   "mef"
-  "../window/include"
-  "window"
-  "../thread/include"
-  "thread"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/mef/CMakeFiles/mef.dir/DependInfo.cmake"
-  "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/window/CMakeFiles/window.dir/DependInfo.cmake"
-  "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/CMakeFiles/glad.dir/DependInfo.cmake"
-  "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/thread/CMakeFiles/thread.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

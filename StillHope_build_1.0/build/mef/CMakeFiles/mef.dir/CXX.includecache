@@ -7,27 +7,13 @@
 #IncludeRegexTransform: 
 
 ../mef/include/mef/mef.hpp
-window/window.hpp
-../mef/include/mef/window/window.hpp
-
-../thread/include/thread/thread.hpp
 pthread.h
 -
 semaphore.h
 -
 iostream
 -
-
-../window/include/window/window.hpp
-iostream
--
-glad/glad.h
--
-GLFW/glfw3.h
--
-thread/thread.hpp
-../window/include/window/thread/thread.hpp
-iostream
+unistd.h
 -
 
 D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/mef/src/mef/mef.cpp

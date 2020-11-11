@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = @CMakeFiles/StillHope_build_1.0.dir/includes_CXX.rsp
 
-CXX_FLAGS = -std=c++11 -g
+CXX_FLAGS = -std=c++0x -g
 

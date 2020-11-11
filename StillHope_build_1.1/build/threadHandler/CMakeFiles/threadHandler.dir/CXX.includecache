@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../threadHandler/include/threadHandler/threadHandler.hpp
+iostream
+-
+pthread.h
+-
+semaphore.h
+-
+
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/threadHandler/src/threadHandler/threadHandler.cpp
+threadHandler/threadHandler.hpp
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/threadHandler/src/threadHandler/threadHandler/threadHandler.hpp
+

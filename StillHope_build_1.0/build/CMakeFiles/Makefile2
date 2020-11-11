@@ -73,17 +73,11 @@ CMAKE_BINARY_DIR = D:\UserData\Documents\vscode-workspace\StillHope\StillHope_bu
 # The main recursive "all" target.
 all: CMakeFiles/glad.dir/all
 all: CMakeFiles/StillHope_build_1.0.dir/all
-all: thread/all
-all: phyEngine/all
-all: window/all
 all: mef/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: thread/preinstall
-preinstall: phyEngine/preinstall
-preinstall: window/preinstall
 preinstall: mef/preinstall
 
 .PHONY : preinstall
@@ -91,9 +85,6 @@ preinstall: mef/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/glad.dir/clean
 clean: CMakeFiles/StillHope_build_1.0.dir/clean
-clean: thread/clean
-clean: phyEngine/clean
-clean: window/clean
 clean: mef/clean
 
 .PHONY : clean
@@ -194,291 +185,6 @@ mef/src/mef/clean:
 .PHONY : mef/src/mef/clean
 
 #=============================================================================
-# Directory level rules for directory phyEngine
-
-# Recursive "all" directory target.
-phyEngine/all: phyEngine/CMakeFiles/phyEngine.dir/all
-phyEngine/all: phyEngine/include/all
-phyEngine/all: phyEngine/src/all
-
-.PHONY : phyEngine/all
-
-# Recursive "preinstall" directory target.
-phyEngine/preinstall: phyEngine/include/preinstall
-phyEngine/preinstall: phyEngine/src/preinstall
-
-.PHONY : phyEngine/preinstall
-
-# Recursive "clean" directory target.
-phyEngine/clean: phyEngine/CMakeFiles/phyEngine.dir/clean
-phyEngine/clean: phyEngine/include/clean
-phyEngine/clean: phyEngine/src/clean
-
-.PHONY : phyEngine/clean
-
-#=============================================================================
-# Directory level rules for directory phyEngine/include
-
-# Recursive "all" directory target.
-phyEngine/include/all: phyEngine/include/phyEngine/all
-
-.PHONY : phyEngine/include/all
-
-# Recursive "preinstall" directory target.
-phyEngine/include/preinstall: phyEngine/include/phyEngine/preinstall
-
-.PHONY : phyEngine/include/preinstall
-
-# Recursive "clean" directory target.
-phyEngine/include/clean: phyEngine/include/phyEngine/clean
-
-.PHONY : phyEngine/include/clean
-
-#=============================================================================
-# Directory level rules for directory phyEngine/include/phyEngine
-
-# Recursive "all" directory target.
-phyEngine/include/phyEngine/all:
-
-.PHONY : phyEngine/include/phyEngine/all
-
-# Recursive "preinstall" directory target.
-phyEngine/include/phyEngine/preinstall:
-
-.PHONY : phyEngine/include/phyEngine/preinstall
-
-# Recursive "clean" directory target.
-phyEngine/include/phyEngine/clean:
-
-.PHONY : phyEngine/include/phyEngine/clean
-
-#=============================================================================
-# Directory level rules for directory phyEngine/src
-
-# Recursive "all" directory target.
-phyEngine/src/all: phyEngine/src/phyEngine/all
-
-.PHONY : phyEngine/src/all
-
-# Recursive "preinstall" directory target.
-phyEngine/src/preinstall: phyEngine/src/phyEngine/preinstall
-
-.PHONY : phyEngine/src/preinstall
-
-# Recursive "clean" directory target.
-phyEngine/src/clean: phyEngine/src/phyEngine/clean
-
-.PHONY : phyEngine/src/clean
-
-#=============================================================================
-# Directory level rules for directory phyEngine/src/phyEngine
-
-# Recursive "all" directory target.
-phyEngine/src/phyEngine/all:
-
-.PHONY : phyEngine/src/phyEngine/all
-
-# Recursive "preinstall" directory target.
-phyEngine/src/phyEngine/preinstall:
-
-.PHONY : phyEngine/src/phyEngine/preinstall
-
-# Recursive "clean" directory target.
-phyEngine/src/phyEngine/clean:
-
-.PHONY : phyEngine/src/phyEngine/clean
-
-#=============================================================================
-# Directory level rules for directory thread
-
-# Recursive "all" directory target.
-thread/all: thread/CMakeFiles/thread.dir/all
-thread/all: thread/include/all
-thread/all: thread/src/all
-
-.PHONY : thread/all
-
-# Recursive "preinstall" directory target.
-thread/preinstall: thread/include/preinstall
-thread/preinstall: thread/src/preinstall
-
-.PHONY : thread/preinstall
-
-# Recursive "clean" directory target.
-thread/clean: thread/CMakeFiles/thread.dir/clean
-thread/clean: thread/include/clean
-thread/clean: thread/src/clean
-
-.PHONY : thread/clean
-
-#=============================================================================
-# Directory level rules for directory thread/include
-
-# Recursive "all" directory target.
-thread/include/all: thread/include/thread/all
-
-.PHONY : thread/include/all
-
-# Recursive "preinstall" directory target.
-thread/include/preinstall: thread/include/thread/preinstall
-
-.PHONY : thread/include/preinstall
-
-# Recursive "clean" directory target.
-thread/include/clean: thread/include/thread/clean
-
-.PHONY : thread/include/clean
-
-#=============================================================================
-# Directory level rules for directory thread/include/thread
-
-# Recursive "all" directory target.
-thread/include/thread/all:
-
-.PHONY : thread/include/thread/all
-
-# Recursive "preinstall" directory target.
-thread/include/thread/preinstall:
-
-.PHONY : thread/include/thread/preinstall
-
-# Recursive "clean" directory target.
-thread/include/thread/clean:
-
-.PHONY : thread/include/thread/clean
-
-#=============================================================================
-# Directory level rules for directory thread/src
-
-# Recursive "all" directory target.
-thread/src/all: thread/src/thread/all
-
-.PHONY : thread/src/all
-
-# Recursive "preinstall" directory target.
-thread/src/preinstall: thread/src/thread/preinstall
-
-.PHONY : thread/src/preinstall
-
-# Recursive "clean" directory target.
-thread/src/clean: thread/src/thread/clean
-
-.PHONY : thread/src/clean
-
-#=============================================================================
-# Directory level rules for directory thread/src/thread
-
-# Recursive "all" directory target.
-thread/src/thread/all:
-
-.PHONY : thread/src/thread/all
-
-# Recursive "preinstall" directory target.
-thread/src/thread/preinstall:
-
-.PHONY : thread/src/thread/preinstall
-
-# Recursive "clean" directory target.
-thread/src/thread/clean:
-
-.PHONY : thread/src/thread/clean
-
-#=============================================================================
-# Directory level rules for directory window
-
-# Recursive "all" directory target.
-window/all: window/CMakeFiles/window.dir/all
-window/all: window/include/all
-window/all: window/src/all
-
-.PHONY : window/all
-
-# Recursive "preinstall" directory target.
-window/preinstall: window/include/preinstall
-window/preinstall: window/src/preinstall
-
-.PHONY : window/preinstall
-
-# Recursive "clean" directory target.
-window/clean: window/CMakeFiles/window.dir/clean
-window/clean: window/include/clean
-window/clean: window/src/clean
-
-.PHONY : window/clean
-
-#=============================================================================
-# Directory level rules for directory window/include
-
-# Recursive "all" directory target.
-window/include/all: window/include/window/all
-
-.PHONY : window/include/all
-
-# Recursive "preinstall" directory target.
-window/include/preinstall: window/include/window/preinstall
-
-.PHONY : window/include/preinstall
-
-# Recursive "clean" directory target.
-window/include/clean: window/include/window/clean
-
-.PHONY : window/include/clean
-
-#=============================================================================
-# Directory level rules for directory window/include/window
-
-# Recursive "all" directory target.
-window/include/window/all:
-
-.PHONY : window/include/window/all
-
-# Recursive "preinstall" directory target.
-window/include/window/preinstall:
-
-.PHONY : window/include/window/preinstall
-
-# Recursive "clean" directory target.
-window/include/window/clean:
-
-.PHONY : window/include/window/clean
-
-#=============================================================================
-# Directory level rules for directory window/src
-
-# Recursive "all" directory target.
-window/src/all: window/src/window/all
-
-.PHONY : window/src/all
-
-# Recursive "preinstall" directory target.
-window/src/preinstall: window/src/window/preinstall
-
-.PHONY : window/src/preinstall
-
-# Recursive "clean" directory target.
-window/src/clean: window/src/window/clean
-
-.PHONY : window/src/clean
-
-#=============================================================================
-# Directory level rules for directory window/src/window
-
-# Recursive "all" directory target.
-window/src/window/all:
-
-.PHONY : window/src/window/all
-
-# Recursive "preinstall" directory target.
-window/src/window/preinstall:
-
-.PHONY : window/src/window/preinstall
-
-# Recursive "clean" directory target.
-window/src/window/clean:
-
-.PHONY : window/src/window/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/glad.dir
 
 # All Build rule for target.
@@ -509,9 +215,6 @@ CMakeFiles/glad.dir/clean:
 # Target rules for target CMakeFiles/StillHope_build_1.0.dir
 
 # All Build rule for target.
-CMakeFiles/StillHope_build_1.0.dir/all: CMakeFiles/glad.dir/all
-CMakeFiles/StillHope_build_1.0.dir/all: thread/CMakeFiles/thread.dir/all
-CMakeFiles/StillHope_build_1.0.dir/all: window/CMakeFiles/window.dir/all
 CMakeFiles/StillHope_build_1.0.dir/all: mef/CMakeFiles/mef.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\StillHope_build_1.0.dir\build.make CMakeFiles/StillHope_build_1.0.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\StillHope_build_1.0.dir\build.make CMakeFiles/StillHope_build_1.0.dir/build
@@ -520,7 +223,7 @@ CMakeFiles/StillHope_build_1.0.dir/all: mef/CMakeFiles/mef.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/StillHope_build_1.0.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/StillHope_build_1.0.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 0
 .PHONY : CMakeFiles/StillHope_build_1.0.dir/rule
@@ -536,94 +239,10 @@ CMakeFiles/StillHope_build_1.0.dir/clean:
 .PHONY : CMakeFiles/StillHope_build_1.0.dir/clean
 
 #=============================================================================
-# Target rules for target thread/CMakeFiles/thread.dir
-
-# All Build rule for target.
-thread/CMakeFiles/thread.dir/all:
-	$(MAKE) $(MAKESILENT) -f thread\CMakeFiles\thread.dir\build.make thread/CMakeFiles/thread.dir/depend
-	$(MAKE) $(MAKESILENT) -f thread\CMakeFiles\thread.dir\build.make thread/CMakeFiles/thread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles --progress-num=9,10 "Built target thread"
-.PHONY : thread/CMakeFiles/thread.dir/all
-
-# Build rule for subdir invocation for target.
-thread/CMakeFiles/thread.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 thread/CMakeFiles/thread.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 0
-.PHONY : thread/CMakeFiles/thread.dir/rule
-
-# Convenience name for target.
-thread: thread/CMakeFiles/thread.dir/rule
-
-.PHONY : thread
-
-# clean rule for target.
-thread/CMakeFiles/thread.dir/clean:
-	$(MAKE) $(MAKESILENT) -f thread\CMakeFiles\thread.dir\build.make thread/CMakeFiles/thread.dir/clean
-.PHONY : thread/CMakeFiles/thread.dir/clean
-
-#=============================================================================
-# Target rules for target phyEngine/CMakeFiles/phyEngine.dir
-
-# All Build rule for target.
-phyEngine/CMakeFiles/phyEngine.dir/all: thread/CMakeFiles/thread.dir/all
-	$(MAKE) $(MAKESILENT) -f phyEngine\CMakeFiles\phyEngine.dir\build.make phyEngine/CMakeFiles/phyEngine.dir/depend
-	$(MAKE) $(MAKESILENT) -f phyEngine\CMakeFiles\phyEngine.dir\build.make phyEngine/CMakeFiles/phyEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles --progress-num=7,8 "Built target phyEngine"
-.PHONY : phyEngine/CMakeFiles/phyEngine.dir/all
-
-# Build rule for subdir invocation for target.
-phyEngine/CMakeFiles/phyEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 phyEngine/CMakeFiles/phyEngine.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 0
-.PHONY : phyEngine/CMakeFiles/phyEngine.dir/rule
-
-# Convenience name for target.
-phyEngine: phyEngine/CMakeFiles/phyEngine.dir/rule
-
-.PHONY : phyEngine
-
-# clean rule for target.
-phyEngine/CMakeFiles/phyEngine.dir/clean:
-	$(MAKE) $(MAKESILENT) -f phyEngine\CMakeFiles\phyEngine.dir\build.make phyEngine/CMakeFiles/phyEngine.dir/clean
-.PHONY : phyEngine/CMakeFiles/phyEngine.dir/clean
-
-#=============================================================================
-# Target rules for target window/CMakeFiles/window.dir
-
-# All Build rule for target.
-window/CMakeFiles/window.dir/all: CMakeFiles/glad.dir/all
-window/CMakeFiles/window.dir/all: thread/CMakeFiles/thread.dir/all
-	$(MAKE) $(MAKESILENT) -f window\CMakeFiles\window.dir\build.make window/CMakeFiles/window.dir/depend
-	$(MAKE) $(MAKESILENT) -f window\CMakeFiles\window.dir\build.make window/CMakeFiles/window.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles --progress-num=11,12 "Built target window"
-.PHONY : window/CMakeFiles/window.dir/all
-
-# Build rule for subdir invocation for target.
-window/CMakeFiles/window.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 window/CMakeFiles/window.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 0
-.PHONY : window/CMakeFiles/window.dir/rule
-
-# Convenience name for target.
-window: window/CMakeFiles/window.dir/rule
-
-.PHONY : window
-
-# clean rule for target.
-window/CMakeFiles/window.dir/clean:
-	$(MAKE) $(MAKESILENT) -f window\CMakeFiles\window.dir\build.make window/CMakeFiles/window.dir/clean
-.PHONY : window/CMakeFiles/window.dir/clean
-
-#=============================================================================
 # Target rules for target mef/CMakeFiles/mef.dir
 
 # All Build rule for target.
-mef/CMakeFiles/mef.dir/all: CMakeFiles/glad.dir/all
-mef/CMakeFiles/mef.dir/all: thread/CMakeFiles/thread.dir/all
-mef/CMakeFiles/mef.dir/all: window/CMakeFiles/window.dir/all
+mef/CMakeFiles/mef.dir/all:
 	$(MAKE) $(MAKESILENT) -f mef\CMakeFiles\mef.dir\build.make mef/CMakeFiles/mef.dir/depend
 	$(MAKE) $(MAKESILENT) -f mef\CMakeFiles\mef.dir\build.make mef/CMakeFiles/mef.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles --progress-num=5,6 "Built target mef"
@@ -631,7 +250,7 @@ mef/CMakeFiles/mef.dir/all: window/CMakeFiles/window.dir/all
 
 # Build rule for subdir invocation for target.
 mef/CMakeFiles/mef.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mef/CMakeFiles/mef.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.0\build\CMakeFiles 0
 .PHONY : mef/CMakeFiles/mef.dir/rule

@@ -3,6 +3,4 @@
 
 mef/CMakeFiles/mef.dir/src/mef/mef.cpp.obj
  ../mef/include/mef/mef.hpp
- ../thread/include/thread/thread.hpp
- ../window/include/window/window.hpp
  D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/mef/src/mef/mef.cpp

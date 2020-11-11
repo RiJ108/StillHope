@@ -39,21 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/thread/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/phyEngine/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/window/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.0/build/mef/cmake_install.cmake")
 endif()
 

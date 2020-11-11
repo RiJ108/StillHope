@@ -7,14 +7,6 @@
 #IncludeRegexTransform: 
 
 ../phyEngine/include/phyEngine/phyEngine.hpp
-thread/thread.hpp
-../phyEngine/include/phyEngine/thread/thread.hpp
-
-../thread/include/thread/thread.hpp
-pthread.h
--
-semaphore.h
--
 iostream
 -
 

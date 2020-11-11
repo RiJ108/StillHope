@@ -6,5 +6,5 @@ CXX_DEFINES = -Dthread_EXPORTS
 
 CXX_INCLUDES = @CMakeFiles/thread.dir/includes_CXX.rsp
 
-CXX_FLAGS = -std=c++11 -g
+CXX_FLAGS = -std=c++0x -g
 

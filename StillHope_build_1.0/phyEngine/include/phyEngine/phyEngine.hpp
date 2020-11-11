@@ -1,9 +1,16 @@
 #ifndef PHYENGINE_HPP
 #define PHYENGINE_HPP
 
-#include "thread/thread.hpp"
+#include <iostream>
 
-class PhyEngine: public Thread{
+using namespace std;
+
+class PhyEngine{
+public:
+    PhyEngine();
+    void run();
+    void* loop();
+private:
 
 };
 

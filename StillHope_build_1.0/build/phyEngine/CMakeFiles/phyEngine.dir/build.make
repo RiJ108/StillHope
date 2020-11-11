@@ -98,7 +98,6 @@ phyEngine_EXTERNAL_OBJECTS =
 
 bin/libphyEngine-d.dll: phyEngine/CMakeFiles/phyEngine.dir/src/phyEngine/phyEngine.cpp.obj
 bin/libphyEngine-d.dll: phyEngine/CMakeFiles/phyEngine.dir/build.make
-bin/libphyEngine-d.dll: lib/libthread-d.dll.a
 bin/libphyEngine-d.dll: phyEngine/CMakeFiles/phyEngine.dir/linklibs.rsp
 bin/libphyEngine-d.dll: phyEngine/CMakeFiles/phyEngine.dir/objects1.rsp
 bin/libphyEngine-d.dll: phyEngine/CMakeFiles/phyEngine.dir/link.txt
