@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+../entity/include/entity/entity.hpp
+glad/glad.h
+-
+shader/shader.hpp
+../entity/include/entity/shader/shader.hpp
+
+../generator/include/generator/generator.hpp
+iostream
+-
+pthread.h
+-
+semaphore.h
+-
+
 ../shader/include/shader/shader.hpp
 glad/glad.h
 -
@@ -51,6 +65,10 @@ shader/shader.hpp
 ../window/include/window/shader/shader.hpp
 threadHandler/threadHandler.hpp
 ../window/include/window/threadHandler/threadHandler.hpp
+entity/entity.hpp
+../window/include/window/entity/entity.hpp
+generator/generator.hpp
+../window/include/window/generator/generator.hpp
 
 D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/window/src/window/window.cpp
 window/window.hpp

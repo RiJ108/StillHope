@@ -227,6 +227,32 @@ shader/fast:
 .PHONY : shader/fast
 
 #=============================================================================
+# Target rules for targets named entity
+
+# Build rule for target.
+entity: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 entity
+.PHONY : entity
+
+# fast build rule for target.
+entity/fast:
+	$(MAKE) $(MAKESILENT) -f entity\CMakeFiles\entity.dir\build.make entity/CMakeFiles/entity.dir/build
+.PHONY : entity/fast
+
+#=============================================================================
+# Target rules for targets named generator
+
+# Build rule for target.
+generator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 generator
+.PHONY : generator
+
+# fast build rule for target.
+generator/fast:
+	$(MAKE) $(MAKESILENT) -f generator\CMakeFiles\generator.dir\build.make generator/CMakeFiles/generator.dir/build
+.PHONY : generator/fast
+
+#=============================================================================
 # Target rules for targets named window
 
 # Build rule for target.
@@ -319,6 +345,8 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... StillHope_build_1.1
+	@echo ... entity
+	@echo ... generator
 	@echo ... glad
 	@echo ... mef
 	@echo ... shader

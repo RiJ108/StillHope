@@ -20,6 +20,16 @@
   "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/shader/src/shader/shader.cpp"
 },
 {
+  "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/entity",
+  "command": "C:\\MinGW\\bin\\g++.exe -Dentity_EXPORTS @CMakeFiles/entity.dir/includes_CXX.rsp -std=c++0x -g -o CMakeFiles\\entity.dir\\src\\entity\\entity.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.1\\entity\\src\\entity\\entity.cpp",
+  "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/entity/src/entity/entity.cpp"
+},
+{
+  "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/generator",
+  "command": "C:\\MinGW\\bin\\g++.exe -Dgenerator_EXPORTS @CMakeFiles/generator.dir/includes_CXX.rsp -std=c++0x -g -o CMakeFiles\\generator.dir\\src\\generator\\generator.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.1\\generator\\src\\generator\\generator.cpp",
+  "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/generator/src/generator/generator.cpp"
+},
+{
   "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/window",
   "command": "C:\\MinGW\\bin\\g++.exe -Dwindow_EXPORTS @CMakeFiles/window.dir/includes_CXX.rsp -std=c++0x -g -o CMakeFiles\\window.dir\\src\\window\\window.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.1\\window\\src\\window\\window.cpp",
   "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/window/src/window/window.cpp"

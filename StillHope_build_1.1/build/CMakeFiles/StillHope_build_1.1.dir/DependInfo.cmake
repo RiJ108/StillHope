@@ -16,13 +16,19 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "threadHandler"
   "../shader/include"
   "shader"
+  "../entity/include"
+  "entity"
+  "../generator/include"
+  "generator"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/window/CMakeFiles/window.dir/DependInfo.cmake"
   "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/threadHandler/CMakeFiles/threadHandler.dir/DependInfo.cmake"
+  "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/entity/CMakeFiles/entity.dir/DependInfo.cmake"
   "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/shader/CMakeFiles/shader.dir/DependInfo.cmake"
+  "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/generator/CMakeFiles/generator.dir/DependInfo.cmake"
   "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/CMakeFiles/glad.dir/DependInfo.cmake"
   )
 

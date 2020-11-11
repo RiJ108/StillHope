@@ -7,6 +7,8 @@
 #include <GLFW/glfw3.h>
 #include "shader/shader.hpp"
 #include "threadHandler/threadHandler.hpp"
+#include "entity/entity.hpp"
+#include "generator/generator.hpp"
 
 using namespace std;
 
@@ -15,10 +17,7 @@ public:
     Window();
     void init();
     void loop();
-    void* loop_(void* obj_param);
-    void link();
-    void join();
-    GLFWwindow* getWindow();
+    
 private:
 
     void processInputs(GLFWwindow* window);
@@ -32,8 +31,11 @@ private:
     float deltaTime = 0.0f;
     float lastFrame = 0.0f;
     float currentFrame = 0.0f;
-    //ThreadHandler threadH;
-    vector<Shader> shaders;
+    Shader shader3D;
+    Generator generator;
+    int currentState = 0;
+    int nextState;
+    int fpsCap = 60;
 };
 
 #endif 

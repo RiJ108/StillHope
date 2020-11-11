@@ -11,7 +11,9 @@
 						1,
 						6,
 						11,
-						16
+						16,
+						21,
+						26
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -23,7 +25,7 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						3
 					]
 				},
 				{
@@ -43,7 +45,7 @@
 					"source" : "threadHandler",
 					"targetIndexes" : 
 					[
-						4
+						6
 					]
 				},
 				{
@@ -115,7 +117,7 @@
 					"source" : "shader",
 					"targetIndexes" : 
 					[
-						3
+						5
 					]
 				},
 				{
@@ -171,7 +173,7 @@
 					"source" : "shader/src/shader"
 				},
 				{
-					"build" : "window",
+					"build" : "entity",
 					"childIndexes" : 
 					[
 						12,
@@ -184,14 +186,14 @@
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "window",
+					"source" : "entity",
 					"targetIndexes" : 
 					[
-						5
+						1
 					]
 				},
 				{
-					"build" : "window/include",
+					"build" : "entity/include",
 					"childIndexes" : 
 					[
 						13
@@ -203,10 +205,10 @@
 					},
 					"parentIndex" : 11,
 					"projectIndex" : 0,
-					"source" : "window/include"
+					"source" : "entity/include"
 				},
 				{
-					"build" : "window/include/window",
+					"build" : "entity/include/entity",
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
@@ -214,10 +216,10 @@
 					},
 					"parentIndex" : 12,
 					"projectIndex" : 0,
-					"source" : "window/include/window"
+					"source" : "entity/include/entity"
 				},
 				{
-					"build" : "window/src",
+					"build" : "entity/src",
 					"childIndexes" : 
 					[
 						15
@@ -229,10 +231,10 @@
 					},
 					"parentIndex" : 11,
 					"projectIndex" : 0,
-					"source" : "window/src"
+					"source" : "entity/src"
 				},
 				{
-					"build" : "window/src/window",
+					"build" : "entity/src/entity",
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
@@ -240,10 +242,10 @@
 					},
 					"parentIndex" : 14,
 					"projectIndex" : 0,
-					"source" : "window/src/window"
+					"source" : "entity/src/entity"
 				},
 				{
-					"build" : "mef",
+					"build" : "generator",
 					"childIndexes" : 
 					[
 						17,
@@ -256,14 +258,14 @@
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "mef",
+					"source" : "generator",
 					"targetIndexes" : 
 					[
 						2
 					]
 				},
 				{
-					"build" : "mef/include",
+					"build" : "generator/include",
 					"childIndexes" : 
 					[
 						18
@@ -275,10 +277,10 @@
 					},
 					"parentIndex" : 16,
 					"projectIndex" : 0,
-					"source" : "mef/include"
+					"source" : "generator/include"
 				},
 				{
-					"build" : "mef/include/mef",
+					"build" : "generator/include/generator",
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
@@ -286,10 +288,10 @@
 					},
 					"parentIndex" : 17,
 					"projectIndex" : 0,
-					"source" : "mef/include/mef"
+					"source" : "generator/include/generator"
 				},
 				{
-					"build" : "mef/src",
+					"build" : "generator/src",
 					"childIndexes" : 
 					[
 						20
@@ -301,6 +303,150 @@
 					},
 					"parentIndex" : 16,
 					"projectIndex" : 0,
+					"source" : "generator/src"
+				},
+				{
+					"build" : "generator/src/generator",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 19,
+					"projectIndex" : 0,
+					"source" : "generator/src/generator"
+				},
+				{
+					"build" : "window",
+					"childIndexes" : 
+					[
+						22,
+						24
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "window",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "window/include",
+					"childIndexes" : 
+					[
+						23
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 21,
+					"projectIndex" : 0,
+					"source" : "window/include"
+				},
+				{
+					"build" : "window/include/window",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 22,
+					"projectIndex" : 0,
+					"source" : "window/include/window"
+				},
+				{
+					"build" : "window/src",
+					"childIndexes" : 
+					[
+						25
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 21,
+					"projectIndex" : 0,
+					"source" : "window/src"
+				},
+				{
+					"build" : "window/src/window",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 24,
+					"projectIndex" : 0,
+					"source" : "window/src/window"
+				},
+				{
+					"build" : "mef",
+					"childIndexes" : 
+					[
+						27,
+						29
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "mef",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "mef/include",
+					"childIndexes" : 
+					[
+						28
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 26,
+					"projectIndex" : 0,
+					"source" : "mef/include"
+				},
+				{
+					"build" : "mef/include/mef",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 27,
+					"projectIndex" : 0,
+					"source" : "mef/include/mef"
+				},
+				{
+					"build" : "mef/src",
+					"childIndexes" : 
+					[
+						30
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 26,
+					"projectIndex" : 0,
 					"source" : "mef/src"
 				},
 				{
@@ -310,7 +456,7 @@
 					{
 						"string" : "3.18.0"
 					},
-					"parentIndex" : 19,
+					"parentIndex" : 29,
 					"projectIndex" : 0,
 					"source" : "mef/src/mef"
 				}
@@ -341,7 +487,17 @@
 						17,
 						18,
 						19,
-						20
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30
 					],
 					"name" : "StillHope",
 					"targetIndexes" : 
@@ -351,7 +507,9 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6,
+						7
 					]
 				}
 			],
@@ -360,8 +518,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "StillHope_build_1.1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-StillHope_build_1.1-Debug-4f3ed802495bbe6e53e1.json",
+					"jsonFile" : "target-StillHope_build_1.1-Debug-f0ab6f8668eedd2d1232.json",
 					"name" : "StillHope_build_1.1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "entity::@d6c2e1204b3d8d4a55e1",
+					"jsonFile" : "target-entity-Debug-a5f2023858fadd9fd8f8.json",
+					"name" : "entity",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "generator::@57ab67fb902b11eae714",
+					"jsonFile" : "target-generator-Debug-cbed4330bb0ae4d27f31.json",
+					"name" : "generator",
 					"projectIndex" : 0
 				},
 				{
@@ -372,7 +544,7 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 16,
+					"directoryIndex" : 26,
 					"id" : "mef::@becf9c71a13ab92314e7",
 					"jsonFile" : "target-mef-Debug-2f01966aa0f2947eef00.json",
 					"name" : "mef",
@@ -393,9 +565,9 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 11,
+					"directoryIndex" : 21,
 					"id" : "window::@042a9f56126fb90ddaf9",
-					"jsonFile" : "target-window-Debug-ad9d540f8995497976bf.json",
+					"jsonFile" : "target-window-Debug-1af7a4e7e448e8509261.json",
 					"name" : "window",
 					"projectIndex" : 0
 				}

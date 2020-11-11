@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../entity/include/entity/entity.hpp
+glad/glad.h
+-
+shader/shader.hpp
+../entity/include/entity/shader/shader.hpp
+
+../shader/include/shader/shader.hpp
+glad/glad.h
+-
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+glm/gtc/type_ptr.hpp
+-
+glm/gtx/vector_angle.hpp
+-
+string
+-
+fstream
+-
+sstream
+-
+iostream
+-
+cstdlib
+-
+vector
+-
+
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/entity/src/entity/entity.cpp
+entity/entity.hpp
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/entity/src/entity/entity/entity.hpp
+

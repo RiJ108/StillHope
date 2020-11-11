@@ -19,6 +19,8 @@ add_library(
 
 add_subdirectory("threadHandler")
 add_subdirectory("shader")
+add_subdirectory("entity")
+add_subdirectory("generator")
 add_subdirectory("window")
 add_subdirectory("mef")
 

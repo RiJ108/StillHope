@@ -75,6 +75,8 @@ all: CMakeFiles/glad.dir/all
 all: CMakeFiles/StillHope_build_1.1.dir/all
 all: threadHandler/all
 all: shader/all
+all: entity/all
+all: generator/all
 all: window/all
 all: mef/all
 
@@ -83,6 +85,8 @@ all: mef/all
 # The main recursive "preinstall" target.
 preinstall: threadHandler/preinstall
 preinstall: shader/preinstall
+preinstall: entity/preinstall
+preinstall: generator/preinstall
 preinstall: window/preinstall
 preinstall: mef/preinstall
 
@@ -93,10 +97,202 @@ clean: CMakeFiles/glad.dir/clean
 clean: CMakeFiles/StillHope_build_1.1.dir/clean
 clean: threadHandler/clean
 clean: shader/clean
+clean: entity/clean
+clean: generator/clean
 clean: window/clean
 clean: mef/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory entity
+
+# Recursive "all" directory target.
+entity/all: entity/CMakeFiles/entity.dir/all
+entity/all: entity/include/all
+entity/all: entity/src/all
+
+.PHONY : entity/all
+
+# Recursive "preinstall" directory target.
+entity/preinstall: entity/include/preinstall
+entity/preinstall: entity/src/preinstall
+
+.PHONY : entity/preinstall
+
+# Recursive "clean" directory target.
+entity/clean: entity/CMakeFiles/entity.dir/clean
+entity/clean: entity/include/clean
+entity/clean: entity/src/clean
+
+.PHONY : entity/clean
+
+#=============================================================================
+# Directory level rules for directory entity/include
+
+# Recursive "all" directory target.
+entity/include/all: entity/include/entity/all
+
+.PHONY : entity/include/all
+
+# Recursive "preinstall" directory target.
+entity/include/preinstall: entity/include/entity/preinstall
+
+.PHONY : entity/include/preinstall
+
+# Recursive "clean" directory target.
+entity/include/clean: entity/include/entity/clean
+
+.PHONY : entity/include/clean
+
+#=============================================================================
+# Directory level rules for directory entity/include/entity
+
+# Recursive "all" directory target.
+entity/include/entity/all:
+
+.PHONY : entity/include/entity/all
+
+# Recursive "preinstall" directory target.
+entity/include/entity/preinstall:
+
+.PHONY : entity/include/entity/preinstall
+
+# Recursive "clean" directory target.
+entity/include/entity/clean:
+
+.PHONY : entity/include/entity/clean
+
+#=============================================================================
+# Directory level rules for directory entity/src
+
+# Recursive "all" directory target.
+entity/src/all: entity/src/entity/all
+
+.PHONY : entity/src/all
+
+# Recursive "preinstall" directory target.
+entity/src/preinstall: entity/src/entity/preinstall
+
+.PHONY : entity/src/preinstall
+
+# Recursive "clean" directory target.
+entity/src/clean: entity/src/entity/clean
+
+.PHONY : entity/src/clean
+
+#=============================================================================
+# Directory level rules for directory entity/src/entity
+
+# Recursive "all" directory target.
+entity/src/entity/all:
+
+.PHONY : entity/src/entity/all
+
+# Recursive "preinstall" directory target.
+entity/src/entity/preinstall:
+
+.PHONY : entity/src/entity/preinstall
+
+# Recursive "clean" directory target.
+entity/src/entity/clean:
+
+.PHONY : entity/src/entity/clean
+
+#=============================================================================
+# Directory level rules for directory generator
+
+# Recursive "all" directory target.
+generator/all: generator/CMakeFiles/generator.dir/all
+generator/all: generator/include/all
+generator/all: generator/src/all
+
+.PHONY : generator/all
+
+# Recursive "preinstall" directory target.
+generator/preinstall: generator/include/preinstall
+generator/preinstall: generator/src/preinstall
+
+.PHONY : generator/preinstall
+
+# Recursive "clean" directory target.
+generator/clean: generator/CMakeFiles/generator.dir/clean
+generator/clean: generator/include/clean
+generator/clean: generator/src/clean
+
+.PHONY : generator/clean
+
+#=============================================================================
+# Directory level rules for directory generator/include
+
+# Recursive "all" directory target.
+generator/include/all: generator/include/generator/all
+
+.PHONY : generator/include/all
+
+# Recursive "preinstall" directory target.
+generator/include/preinstall: generator/include/generator/preinstall
+
+.PHONY : generator/include/preinstall
+
+# Recursive "clean" directory target.
+generator/include/clean: generator/include/generator/clean
+
+.PHONY : generator/include/clean
+
+#=============================================================================
+# Directory level rules for directory generator/include/generator
+
+# Recursive "all" directory target.
+generator/include/generator/all:
+
+.PHONY : generator/include/generator/all
+
+# Recursive "preinstall" directory target.
+generator/include/generator/preinstall:
+
+.PHONY : generator/include/generator/preinstall
+
+# Recursive "clean" directory target.
+generator/include/generator/clean:
+
+.PHONY : generator/include/generator/clean
+
+#=============================================================================
+# Directory level rules for directory generator/src
+
+# Recursive "all" directory target.
+generator/src/all: generator/src/generator/all
+
+.PHONY : generator/src/all
+
+# Recursive "preinstall" directory target.
+generator/src/preinstall: generator/src/generator/preinstall
+
+.PHONY : generator/src/preinstall
+
+# Recursive "clean" directory target.
+generator/src/clean: generator/src/generator/clean
+
+.PHONY : generator/src/clean
+
+#=============================================================================
+# Directory level rules for directory generator/src/generator
+
+# Recursive "all" directory target.
+generator/src/generator/all:
+
+.PHONY : generator/src/generator/all
+
+# Recursive "preinstall" directory target.
+generator/src/generator/preinstall:
+
+.PHONY : generator/src/generator/preinstall
+
+# Recursive "clean" directory target.
+generator/src/generator/clean:
+
+.PHONY : generator/src/generator/clean
 
 #=============================================================================
 # Directory level rules for directory mef
@@ -485,7 +681,7 @@ window/src/window/clean:
 CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\glad.dir\build.make CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\glad.dir\build.make CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=3,4 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=7,8 "Built target glad"
 .PHONY : CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
@@ -512,6 +708,8 @@ CMakeFiles/glad.dir/clean:
 CMakeFiles/StillHope_build_1.1.dir/all: CMakeFiles/glad.dir/all
 CMakeFiles/StillHope_build_1.1.dir/all: threadHandler/CMakeFiles/threadHandler.dir/all
 CMakeFiles/StillHope_build_1.1.dir/all: shader/CMakeFiles/shader.dir/all
+CMakeFiles/StillHope_build_1.1.dir/all: entity/CMakeFiles/entity.dir/all
+CMakeFiles/StillHope_build_1.1.dir/all: generator/CMakeFiles/generator.dir/all
 CMakeFiles/StillHope_build_1.1.dir/all: window/CMakeFiles/window.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\StillHope_build_1.1.dir\build.make CMakeFiles/StillHope_build_1.1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\StillHope_build_1.1.dir\build.make CMakeFiles/StillHope_build_1.1.dir/build
@@ -520,7 +718,7 @@ CMakeFiles/StillHope_build_1.1.dir/all: window/CMakeFiles/window.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/StillHope_build_1.1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/StillHope_build_1.1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
 .PHONY : CMakeFiles/StillHope_build_1.1.dir/rule
@@ -542,7 +740,7 @@ CMakeFiles/StillHope_build_1.1.dir/clean:
 threadHandler/CMakeFiles/threadHandler.dir/all:
 	$(MAKE) $(MAKESILENT) -f threadHandler\CMakeFiles\threadHandler.dir\build.make threadHandler/CMakeFiles/threadHandler.dir/depend
 	$(MAKE) $(MAKESILENT) -f threadHandler\CMakeFiles\threadHandler.dir\build.make threadHandler/CMakeFiles/threadHandler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=9,10 "Built target threadHandler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=13,14 "Built target threadHandler"
 .PHONY : threadHandler/CMakeFiles/threadHandler.dir/all
 
 # Build rule for subdir invocation for target.
@@ -569,7 +767,7 @@ threadHandler/CMakeFiles/threadHandler.dir/clean:
 shader/CMakeFiles/shader.dir/all: CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f shader\CMakeFiles\shader.dir\build.make shader/CMakeFiles/shader.dir/depend
 	$(MAKE) $(MAKESILENT) -f shader\CMakeFiles\shader.dir\build.make shader/CMakeFiles/shader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=7,8 "Built target shader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=11,12 "Built target shader"
 .PHONY : shader/CMakeFiles/shader.dir/all
 
 # Build rule for subdir invocation for target.
@@ -590,20 +788,77 @@ shader/CMakeFiles/shader.dir/clean:
 .PHONY : shader/CMakeFiles/shader.dir/clean
 
 #=============================================================================
+# Target rules for target entity/CMakeFiles/entity.dir
+
+# All Build rule for target.
+entity/CMakeFiles/entity.dir/all: CMakeFiles/glad.dir/all
+entity/CMakeFiles/entity.dir/all: shader/CMakeFiles/shader.dir/all
+	$(MAKE) $(MAKESILENT) -f entity\CMakeFiles\entity.dir\build.make entity/CMakeFiles/entity.dir/depend
+	$(MAKE) $(MAKESILENT) -f entity\CMakeFiles\entity.dir\build.make entity/CMakeFiles/entity.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=3,4 "Built target entity"
+.PHONY : entity/CMakeFiles/entity.dir/all
+
+# Build rule for subdir invocation for target.
+entity/CMakeFiles/entity.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 entity/CMakeFiles/entity.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
+.PHONY : entity/CMakeFiles/entity.dir/rule
+
+# Convenience name for target.
+entity: entity/CMakeFiles/entity.dir/rule
+
+.PHONY : entity
+
+# clean rule for target.
+entity/CMakeFiles/entity.dir/clean:
+	$(MAKE) $(MAKESILENT) -f entity\CMakeFiles\entity.dir\build.make entity/CMakeFiles/entity.dir/clean
+.PHONY : entity/CMakeFiles/entity.dir/clean
+
+#=============================================================================
+# Target rules for target generator/CMakeFiles/generator.dir
+
+# All Build rule for target.
+generator/CMakeFiles/generator.dir/all:
+	$(MAKE) $(MAKESILENT) -f generator\CMakeFiles\generator.dir\build.make generator/CMakeFiles/generator.dir/depend
+	$(MAKE) $(MAKESILENT) -f generator\CMakeFiles\generator.dir\build.make generator/CMakeFiles/generator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=5,6 "Built target generator"
+.PHONY : generator/CMakeFiles/generator.dir/all
+
+# Build rule for subdir invocation for target.
+generator/CMakeFiles/generator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 generator/CMakeFiles/generator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
+.PHONY : generator/CMakeFiles/generator.dir/rule
+
+# Convenience name for target.
+generator: generator/CMakeFiles/generator.dir/rule
+
+.PHONY : generator
+
+# clean rule for target.
+generator/CMakeFiles/generator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f generator\CMakeFiles\generator.dir\build.make generator/CMakeFiles/generator.dir/clean
+.PHONY : generator/CMakeFiles/generator.dir/clean
+
+#=============================================================================
 # Target rules for target window/CMakeFiles/window.dir
 
 # All Build rule for target.
 window/CMakeFiles/window.dir/all: CMakeFiles/glad.dir/all
 window/CMakeFiles/window.dir/all: threadHandler/CMakeFiles/threadHandler.dir/all
 window/CMakeFiles/window.dir/all: shader/CMakeFiles/shader.dir/all
+window/CMakeFiles/window.dir/all: entity/CMakeFiles/entity.dir/all
+window/CMakeFiles/window.dir/all: generator/CMakeFiles/generator.dir/all
 	$(MAKE) $(MAKESILENT) -f window\CMakeFiles\window.dir\build.make window/CMakeFiles/window.dir/depend
 	$(MAKE) $(MAKESILENT) -f window\CMakeFiles\window.dir\build.make window/CMakeFiles/window.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=11,12 "Built target window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=15,16 "Built target window"
 .PHONY : window/CMakeFiles/window.dir/all
 
 # Build rule for subdir invocation for target.
 window/CMakeFiles/window.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 window/CMakeFiles/window.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
 .PHONY : window/CMakeFiles/window.dir/rule
@@ -625,7 +880,7 @@ window/CMakeFiles/window.dir/clean:
 mef/CMakeFiles/mef.dir/all: threadHandler/CMakeFiles/threadHandler.dir/all
 	$(MAKE) $(MAKESILENT) -f mef\CMakeFiles\mef.dir\build.make mef/CMakeFiles/mef.dir/depend
 	$(MAKE) $(MAKESILENT) -f mef\CMakeFiles\mef.dir\build.make mef/CMakeFiles/mef.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=5,6 "Built target mef"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=9,10 "Built target mef"
 .PHONY : mef/CMakeFiles/mef.dir/all
 
 # Build rule for subdir invocation for target.

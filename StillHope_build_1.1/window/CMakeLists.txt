@@ -23,6 +23,8 @@ target_link_libraries(
    "${LIB_NAME}"
     threadHandler
     shader
+    entity
+    generator
     libglfw3.a 
     libgdi32.a
     glad
