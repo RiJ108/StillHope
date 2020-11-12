@@ -73,34 +73,37 @@ CMAKE_BINARY_DIR = D:\UserData\Documents\vscode-workspace\StillHope\StillHope_bu
 # The main recursive "all" target.
 all: CMakeFiles/glad.dir/all
 all: CMakeFiles/StillHope_build_1.1.dir/all
-all: threadHandler/all
 all: shader/all
 all: entity/all
+all: player/all
+all: perlinNoise/all
+all: world/all
 all: generator/all
 all: window/all
-all: mef/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: threadHandler/preinstall
 preinstall: shader/preinstall
 preinstall: entity/preinstall
+preinstall: player/preinstall
+preinstall: perlinNoise/preinstall
+preinstall: world/preinstall
 preinstall: generator/preinstall
 preinstall: window/preinstall
-preinstall: mef/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/glad.dir/clean
 clean: CMakeFiles/StillHope_build_1.1.dir/clean
-clean: threadHandler/clean
 clean: shader/clean
 clean: entity/clean
+clean: player/clean
+clean: perlinNoise/clean
+clean: world/clean
 clean: generator/clean
 clean: window/clean
-clean: mef/clean
 
 .PHONY : clean
 
@@ -295,99 +298,194 @@ generator/src/generator/clean:
 .PHONY : generator/src/generator/clean
 
 #=============================================================================
-# Directory level rules for directory mef
+# Directory level rules for directory perlinNoise
 
 # Recursive "all" directory target.
-mef/all: mef/CMakeFiles/mef.dir/all
-mef/all: mef/include/all
-mef/all: mef/src/all
+perlinNoise/all: perlinNoise/CMakeFiles/perlinNoise.dir/all
+perlinNoise/all: perlinNoise/include/all
+perlinNoise/all: perlinNoise/src/all
 
-.PHONY : mef/all
+.PHONY : perlinNoise/all
 
 # Recursive "preinstall" directory target.
-mef/preinstall: mef/include/preinstall
-mef/preinstall: mef/src/preinstall
+perlinNoise/preinstall: perlinNoise/include/preinstall
+perlinNoise/preinstall: perlinNoise/src/preinstall
 
-.PHONY : mef/preinstall
+.PHONY : perlinNoise/preinstall
 
 # Recursive "clean" directory target.
-mef/clean: mef/CMakeFiles/mef.dir/clean
-mef/clean: mef/include/clean
-mef/clean: mef/src/clean
+perlinNoise/clean: perlinNoise/CMakeFiles/perlinNoise.dir/clean
+perlinNoise/clean: perlinNoise/include/clean
+perlinNoise/clean: perlinNoise/src/clean
 
-.PHONY : mef/clean
+.PHONY : perlinNoise/clean
 
 #=============================================================================
-# Directory level rules for directory mef/include
+# Directory level rules for directory perlinNoise/include
 
 # Recursive "all" directory target.
-mef/include/all: mef/include/mef/all
+perlinNoise/include/all: perlinNoise/include/perlinNoise/all
 
-.PHONY : mef/include/all
+.PHONY : perlinNoise/include/all
 
 # Recursive "preinstall" directory target.
-mef/include/preinstall: mef/include/mef/preinstall
+perlinNoise/include/preinstall: perlinNoise/include/perlinNoise/preinstall
 
-.PHONY : mef/include/preinstall
+.PHONY : perlinNoise/include/preinstall
 
 # Recursive "clean" directory target.
-mef/include/clean: mef/include/mef/clean
+perlinNoise/include/clean: perlinNoise/include/perlinNoise/clean
 
-.PHONY : mef/include/clean
+.PHONY : perlinNoise/include/clean
 
 #=============================================================================
-# Directory level rules for directory mef/include/mef
+# Directory level rules for directory perlinNoise/include/perlinNoise
 
 # Recursive "all" directory target.
-mef/include/mef/all:
+perlinNoise/include/perlinNoise/all:
 
-.PHONY : mef/include/mef/all
+.PHONY : perlinNoise/include/perlinNoise/all
 
 # Recursive "preinstall" directory target.
-mef/include/mef/preinstall:
+perlinNoise/include/perlinNoise/preinstall:
 
-.PHONY : mef/include/mef/preinstall
+.PHONY : perlinNoise/include/perlinNoise/preinstall
 
 # Recursive "clean" directory target.
-mef/include/mef/clean:
+perlinNoise/include/perlinNoise/clean:
 
-.PHONY : mef/include/mef/clean
+.PHONY : perlinNoise/include/perlinNoise/clean
 
 #=============================================================================
-# Directory level rules for directory mef/src
+# Directory level rules for directory perlinNoise/src
 
 # Recursive "all" directory target.
-mef/src/all: mef/src/mef/all
+perlinNoise/src/all: perlinNoise/src/perlinNoise/all
 
-.PHONY : mef/src/all
+.PHONY : perlinNoise/src/all
 
 # Recursive "preinstall" directory target.
-mef/src/preinstall: mef/src/mef/preinstall
+perlinNoise/src/preinstall: perlinNoise/src/perlinNoise/preinstall
 
-.PHONY : mef/src/preinstall
+.PHONY : perlinNoise/src/preinstall
 
 # Recursive "clean" directory target.
-mef/src/clean: mef/src/mef/clean
+perlinNoise/src/clean: perlinNoise/src/perlinNoise/clean
 
-.PHONY : mef/src/clean
+.PHONY : perlinNoise/src/clean
 
 #=============================================================================
-# Directory level rules for directory mef/src/mef
+# Directory level rules for directory perlinNoise/src/perlinNoise
 
 # Recursive "all" directory target.
-mef/src/mef/all:
+perlinNoise/src/perlinNoise/all:
 
-.PHONY : mef/src/mef/all
+.PHONY : perlinNoise/src/perlinNoise/all
 
 # Recursive "preinstall" directory target.
-mef/src/mef/preinstall:
+perlinNoise/src/perlinNoise/preinstall:
 
-.PHONY : mef/src/mef/preinstall
+.PHONY : perlinNoise/src/perlinNoise/preinstall
 
 # Recursive "clean" directory target.
-mef/src/mef/clean:
+perlinNoise/src/perlinNoise/clean:
 
-.PHONY : mef/src/mef/clean
+.PHONY : perlinNoise/src/perlinNoise/clean
+
+#=============================================================================
+# Directory level rules for directory player
+
+# Recursive "all" directory target.
+player/all: player/CMakeFiles/player.dir/all
+player/all: player/include/all
+player/all: player/src/all
+
+.PHONY : player/all
+
+# Recursive "preinstall" directory target.
+player/preinstall: player/include/preinstall
+player/preinstall: player/src/preinstall
+
+.PHONY : player/preinstall
+
+# Recursive "clean" directory target.
+player/clean: player/CMakeFiles/player.dir/clean
+player/clean: player/include/clean
+player/clean: player/src/clean
+
+.PHONY : player/clean
+
+#=============================================================================
+# Directory level rules for directory player/include
+
+# Recursive "all" directory target.
+player/include/all: player/include/player/all
+
+.PHONY : player/include/all
+
+# Recursive "preinstall" directory target.
+player/include/preinstall: player/include/player/preinstall
+
+.PHONY : player/include/preinstall
+
+# Recursive "clean" directory target.
+player/include/clean: player/include/player/clean
+
+.PHONY : player/include/clean
+
+#=============================================================================
+# Directory level rules for directory player/include/player
+
+# Recursive "all" directory target.
+player/include/player/all:
+
+.PHONY : player/include/player/all
+
+# Recursive "preinstall" directory target.
+player/include/player/preinstall:
+
+.PHONY : player/include/player/preinstall
+
+# Recursive "clean" directory target.
+player/include/player/clean:
+
+.PHONY : player/include/player/clean
+
+#=============================================================================
+# Directory level rules for directory player/src
+
+# Recursive "all" directory target.
+player/src/all: player/src/player/all
+
+.PHONY : player/src/all
+
+# Recursive "preinstall" directory target.
+player/src/preinstall: player/src/player/preinstall
+
+.PHONY : player/src/preinstall
+
+# Recursive "clean" directory target.
+player/src/clean: player/src/player/clean
+
+.PHONY : player/src/clean
+
+#=============================================================================
+# Directory level rules for directory player/src/player
+
+# Recursive "all" directory target.
+player/src/player/all:
+
+.PHONY : player/src/player/all
+
+# Recursive "preinstall" directory target.
+player/src/player/preinstall:
+
+.PHONY : player/src/player/preinstall
+
+# Recursive "clean" directory target.
+player/src/player/clean:
+
+.PHONY : player/src/player/clean
 
 #=============================================================================
 # Directory level rules for directory shader
@@ -485,101 +583,6 @@ shader/src/shader/clean:
 .PHONY : shader/src/shader/clean
 
 #=============================================================================
-# Directory level rules for directory threadHandler
-
-# Recursive "all" directory target.
-threadHandler/all: threadHandler/CMakeFiles/threadHandler.dir/all
-threadHandler/all: threadHandler/include/all
-threadHandler/all: threadHandler/src/all
-
-.PHONY : threadHandler/all
-
-# Recursive "preinstall" directory target.
-threadHandler/preinstall: threadHandler/include/preinstall
-threadHandler/preinstall: threadHandler/src/preinstall
-
-.PHONY : threadHandler/preinstall
-
-# Recursive "clean" directory target.
-threadHandler/clean: threadHandler/CMakeFiles/threadHandler.dir/clean
-threadHandler/clean: threadHandler/include/clean
-threadHandler/clean: threadHandler/src/clean
-
-.PHONY : threadHandler/clean
-
-#=============================================================================
-# Directory level rules for directory threadHandler/include
-
-# Recursive "all" directory target.
-threadHandler/include/all: threadHandler/include/threadHandler/all
-
-.PHONY : threadHandler/include/all
-
-# Recursive "preinstall" directory target.
-threadHandler/include/preinstall: threadHandler/include/threadHandler/preinstall
-
-.PHONY : threadHandler/include/preinstall
-
-# Recursive "clean" directory target.
-threadHandler/include/clean: threadHandler/include/threadHandler/clean
-
-.PHONY : threadHandler/include/clean
-
-#=============================================================================
-# Directory level rules for directory threadHandler/include/threadHandler
-
-# Recursive "all" directory target.
-threadHandler/include/threadHandler/all:
-
-.PHONY : threadHandler/include/threadHandler/all
-
-# Recursive "preinstall" directory target.
-threadHandler/include/threadHandler/preinstall:
-
-.PHONY : threadHandler/include/threadHandler/preinstall
-
-# Recursive "clean" directory target.
-threadHandler/include/threadHandler/clean:
-
-.PHONY : threadHandler/include/threadHandler/clean
-
-#=============================================================================
-# Directory level rules for directory threadHandler/src
-
-# Recursive "all" directory target.
-threadHandler/src/all: threadHandler/src/threadHandler/all
-
-.PHONY : threadHandler/src/all
-
-# Recursive "preinstall" directory target.
-threadHandler/src/preinstall: threadHandler/src/threadHandler/preinstall
-
-.PHONY : threadHandler/src/preinstall
-
-# Recursive "clean" directory target.
-threadHandler/src/clean: threadHandler/src/threadHandler/clean
-
-.PHONY : threadHandler/src/clean
-
-#=============================================================================
-# Directory level rules for directory threadHandler/src/threadHandler
-
-# Recursive "all" directory target.
-threadHandler/src/threadHandler/all:
-
-.PHONY : threadHandler/src/threadHandler/all
-
-# Recursive "preinstall" directory target.
-threadHandler/src/threadHandler/preinstall:
-
-.PHONY : threadHandler/src/threadHandler/preinstall
-
-# Recursive "clean" directory target.
-threadHandler/src/threadHandler/clean:
-
-.PHONY : threadHandler/src/threadHandler/clean
-
-#=============================================================================
 # Directory level rules for directory window
 
 # Recursive "all" directory target.
@@ -675,6 +678,101 @@ window/src/window/clean:
 .PHONY : window/src/window/clean
 
 #=============================================================================
+# Directory level rules for directory world
+
+# Recursive "all" directory target.
+world/all: world/CMakeFiles/world.dir/all
+world/all: world/include/all
+world/all: world/src/all
+
+.PHONY : world/all
+
+# Recursive "preinstall" directory target.
+world/preinstall: world/include/preinstall
+world/preinstall: world/src/preinstall
+
+.PHONY : world/preinstall
+
+# Recursive "clean" directory target.
+world/clean: world/CMakeFiles/world.dir/clean
+world/clean: world/include/clean
+world/clean: world/src/clean
+
+.PHONY : world/clean
+
+#=============================================================================
+# Directory level rules for directory world/include
+
+# Recursive "all" directory target.
+world/include/all: world/include/world/all
+
+.PHONY : world/include/all
+
+# Recursive "preinstall" directory target.
+world/include/preinstall: world/include/world/preinstall
+
+.PHONY : world/include/preinstall
+
+# Recursive "clean" directory target.
+world/include/clean: world/include/world/clean
+
+.PHONY : world/include/clean
+
+#=============================================================================
+# Directory level rules for directory world/include/world
+
+# Recursive "all" directory target.
+world/include/world/all:
+
+.PHONY : world/include/world/all
+
+# Recursive "preinstall" directory target.
+world/include/world/preinstall:
+
+.PHONY : world/include/world/preinstall
+
+# Recursive "clean" directory target.
+world/include/world/clean:
+
+.PHONY : world/include/world/clean
+
+#=============================================================================
+# Directory level rules for directory world/src
+
+# Recursive "all" directory target.
+world/src/all: world/src/world/all
+
+.PHONY : world/src/all
+
+# Recursive "preinstall" directory target.
+world/src/preinstall: world/src/world/preinstall
+
+.PHONY : world/src/preinstall
+
+# Recursive "clean" directory target.
+world/src/clean: world/src/world/clean
+
+.PHONY : world/src/clean
+
+#=============================================================================
+# Directory level rules for directory world/src/world
+
+# Recursive "all" directory target.
+world/src/world/all:
+
+.PHONY : world/src/world/all
+
+# Recursive "preinstall" directory target.
+world/src/world/preinstall:
+
+.PHONY : world/src/world/preinstall
+
+# Recursive "clean" directory target.
+world/src/world/clean:
+
+.PHONY : world/src/world/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/glad.dir
 
 # All Build rule for target.
@@ -705,10 +803,11 @@ CMakeFiles/glad.dir/clean:
 # Target rules for target CMakeFiles/StillHope_build_1.1.dir
 
 # All Build rule for target.
-CMakeFiles/StillHope_build_1.1.dir/all: CMakeFiles/glad.dir/all
-CMakeFiles/StillHope_build_1.1.dir/all: threadHandler/CMakeFiles/threadHandler.dir/all
 CMakeFiles/StillHope_build_1.1.dir/all: shader/CMakeFiles/shader.dir/all
+CMakeFiles/StillHope_build_1.1.dir/all: CMakeFiles/glad.dir/all
 CMakeFiles/StillHope_build_1.1.dir/all: entity/CMakeFiles/entity.dir/all
+CMakeFiles/StillHope_build_1.1.dir/all: player/CMakeFiles/player.dir/all
+CMakeFiles/StillHope_build_1.1.dir/all: perlinNoise/CMakeFiles/perlinNoise.dir/all
 CMakeFiles/StillHope_build_1.1.dir/all: generator/CMakeFiles/generator.dir/all
 CMakeFiles/StillHope_build_1.1.dir/all: window/CMakeFiles/window.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\StillHope_build_1.1.dir\build.make CMakeFiles/StillHope_build_1.1.dir/depend
@@ -718,7 +817,7 @@ CMakeFiles/StillHope_build_1.1.dir/all: window/CMakeFiles/window.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/StillHope_build_1.1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/StillHope_build_1.1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
 .PHONY : CMakeFiles/StillHope_build_1.1.dir/rule
@@ -734,40 +833,13 @@ CMakeFiles/StillHope_build_1.1.dir/clean:
 .PHONY : CMakeFiles/StillHope_build_1.1.dir/clean
 
 #=============================================================================
-# Target rules for target threadHandler/CMakeFiles/threadHandler.dir
-
-# All Build rule for target.
-threadHandler/CMakeFiles/threadHandler.dir/all:
-	$(MAKE) $(MAKESILENT) -f threadHandler\CMakeFiles\threadHandler.dir\build.make threadHandler/CMakeFiles/threadHandler.dir/depend
-	$(MAKE) $(MAKESILENT) -f threadHandler\CMakeFiles\threadHandler.dir\build.make threadHandler/CMakeFiles/threadHandler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=13,14 "Built target threadHandler"
-.PHONY : threadHandler/CMakeFiles/threadHandler.dir/all
-
-# Build rule for subdir invocation for target.
-threadHandler/CMakeFiles/threadHandler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 threadHandler/CMakeFiles/threadHandler.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
-.PHONY : threadHandler/CMakeFiles/threadHandler.dir/rule
-
-# Convenience name for target.
-threadHandler: threadHandler/CMakeFiles/threadHandler.dir/rule
-
-.PHONY : threadHandler
-
-# clean rule for target.
-threadHandler/CMakeFiles/threadHandler.dir/clean:
-	$(MAKE) $(MAKESILENT) -f threadHandler\CMakeFiles\threadHandler.dir\build.make threadHandler/CMakeFiles/threadHandler.dir/clean
-.PHONY : threadHandler/CMakeFiles/threadHandler.dir/clean
-
-#=============================================================================
 # Target rules for target shader/CMakeFiles/shader.dir
 
 # All Build rule for target.
 shader/CMakeFiles/shader.dir/all: CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f shader\CMakeFiles\shader.dir\build.make shader/CMakeFiles/shader.dir/depend
 	$(MAKE) $(MAKESILENT) -f shader\CMakeFiles\shader.dir\build.make shader/CMakeFiles/shader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=11,12 "Built target shader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=13,14 "Built target shader"
 .PHONY : shader/CMakeFiles/shader.dir/all
 
 # Build rule for subdir invocation for target.
@@ -791,8 +863,8 @@ shader/CMakeFiles/shader.dir/clean:
 # Target rules for target entity/CMakeFiles/entity.dir
 
 # All Build rule for target.
-entity/CMakeFiles/entity.dir/all: CMakeFiles/glad.dir/all
 entity/CMakeFiles/entity.dir/all: shader/CMakeFiles/shader.dir/all
+entity/CMakeFiles/entity.dir/all: CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f entity\CMakeFiles\entity.dir\build.make entity/CMakeFiles/entity.dir/depend
 	$(MAKE) $(MAKESILENT) -f entity\CMakeFiles\entity.dir\build.make entity/CMakeFiles/entity.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=3,4 "Built target entity"
@@ -816,10 +888,93 @@ entity/CMakeFiles/entity.dir/clean:
 .PHONY : entity/CMakeFiles/entity.dir/clean
 
 #=============================================================================
+# Target rules for target player/CMakeFiles/player.dir
+
+# All Build rule for target.
+player/CMakeFiles/player.dir/all: shader/CMakeFiles/shader.dir/all
+player/CMakeFiles/player.dir/all: CMakeFiles/glad.dir/all
+	$(MAKE) $(MAKESILENT) -f player\CMakeFiles\player.dir\build.make player/CMakeFiles/player.dir/depend
+	$(MAKE) $(MAKESILENT) -f player\CMakeFiles\player.dir\build.make player/CMakeFiles/player.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=11,12 "Built target player"
+.PHONY : player/CMakeFiles/player.dir/all
+
+# Build rule for subdir invocation for target.
+player/CMakeFiles/player.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 player/CMakeFiles/player.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
+.PHONY : player/CMakeFiles/player.dir/rule
+
+# Convenience name for target.
+player: player/CMakeFiles/player.dir/rule
+
+.PHONY : player
+
+# clean rule for target.
+player/CMakeFiles/player.dir/clean:
+	$(MAKE) $(MAKESILENT) -f player\CMakeFiles\player.dir\build.make player/CMakeFiles/player.dir/clean
+.PHONY : player/CMakeFiles/player.dir/clean
+
+#=============================================================================
+# Target rules for target perlinNoise/CMakeFiles/perlinNoise.dir
+
+# All Build rule for target.
+perlinNoise/CMakeFiles/perlinNoise.dir/all:
+	$(MAKE) $(MAKESILENT) -f perlinNoise\CMakeFiles\perlinNoise.dir\build.make perlinNoise/CMakeFiles/perlinNoise.dir/depend
+	$(MAKE) $(MAKESILENT) -f perlinNoise\CMakeFiles\perlinNoise.dir\build.make perlinNoise/CMakeFiles/perlinNoise.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=9,10 "Built target perlinNoise"
+.PHONY : perlinNoise/CMakeFiles/perlinNoise.dir/all
+
+# Build rule for subdir invocation for target.
+perlinNoise/CMakeFiles/perlinNoise.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 perlinNoise/CMakeFiles/perlinNoise.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
+.PHONY : perlinNoise/CMakeFiles/perlinNoise.dir/rule
+
+# Convenience name for target.
+perlinNoise: perlinNoise/CMakeFiles/perlinNoise.dir/rule
+
+.PHONY : perlinNoise
+
+# clean rule for target.
+perlinNoise/CMakeFiles/perlinNoise.dir/clean:
+	$(MAKE) $(MAKESILENT) -f perlinNoise\CMakeFiles\perlinNoise.dir\build.make perlinNoise/CMakeFiles/perlinNoise.dir/clean
+.PHONY : perlinNoise/CMakeFiles/perlinNoise.dir/clean
+
+#=============================================================================
+# Target rules for target world/CMakeFiles/world.dir
+
+# All Build rule for target.
+world/CMakeFiles/world.dir/all: shader/CMakeFiles/shader.dir/all
+world/CMakeFiles/world.dir/all: CMakeFiles/glad.dir/all
+	$(MAKE) $(MAKESILENT) -f world\CMakeFiles\world.dir\build.make world/CMakeFiles/world.dir/depend
+	$(MAKE) $(MAKESILENT) -f world\CMakeFiles\world.dir\build.make world/CMakeFiles/world.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=17,18 "Built target world"
+.PHONY : world/CMakeFiles/world.dir/all
+
+# Build rule for subdir invocation for target.
+world/CMakeFiles/world.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 world/CMakeFiles/world.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
+.PHONY : world/CMakeFiles/world.dir/rule
+
+# Convenience name for target.
+world: world/CMakeFiles/world.dir/rule
+
+.PHONY : world
+
+# clean rule for target.
+world/CMakeFiles/world.dir/clean:
+	$(MAKE) $(MAKESILENT) -f world\CMakeFiles\world.dir\build.make world/CMakeFiles/world.dir/clean
+.PHONY : world/CMakeFiles/world.dir/clean
+
+#=============================================================================
 # Target rules for target generator/CMakeFiles/generator.dir
 
 # All Build rule for target.
-generator/CMakeFiles/generator.dir/all:
+generator/CMakeFiles/generator.dir/all: perlinNoise/CMakeFiles/perlinNoise.dir/all
 	$(MAKE) $(MAKESILENT) -f generator\CMakeFiles\generator.dir\build.make generator/CMakeFiles/generator.dir/depend
 	$(MAKE) $(MAKESILENT) -f generator\CMakeFiles\generator.dir\build.make generator/CMakeFiles/generator.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=5,6 "Built target generator"
@@ -827,7 +982,7 @@ generator/CMakeFiles/generator.dir/all:
 
 # Build rule for subdir invocation for target.
 generator/CMakeFiles/generator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 generator/CMakeFiles/generator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
 .PHONY : generator/CMakeFiles/generator.dir/rule
@@ -846,10 +1001,11 @@ generator/CMakeFiles/generator.dir/clean:
 # Target rules for target window/CMakeFiles/window.dir
 
 # All Build rule for target.
-window/CMakeFiles/window.dir/all: CMakeFiles/glad.dir/all
-window/CMakeFiles/window.dir/all: threadHandler/CMakeFiles/threadHandler.dir/all
 window/CMakeFiles/window.dir/all: shader/CMakeFiles/shader.dir/all
+window/CMakeFiles/window.dir/all: CMakeFiles/glad.dir/all
 window/CMakeFiles/window.dir/all: entity/CMakeFiles/entity.dir/all
+window/CMakeFiles/window.dir/all: player/CMakeFiles/player.dir/all
+window/CMakeFiles/window.dir/all: perlinNoise/CMakeFiles/perlinNoise.dir/all
 window/CMakeFiles/window.dir/all: generator/CMakeFiles/generator.dir/all
 	$(MAKE) $(MAKESILENT) -f window\CMakeFiles\window.dir\build.make window/CMakeFiles/window.dir/depend
 	$(MAKE) $(MAKESILENT) -f window\CMakeFiles\window.dir\build.make window/CMakeFiles/window.dir/build
@@ -858,7 +1014,7 @@ window/CMakeFiles/window.dir/all: generator/CMakeFiles/generator.dir/all
 
 # Build rule for subdir invocation for target.
 window/CMakeFiles/window.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 window/CMakeFiles/window.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
 .PHONY : window/CMakeFiles/window.dir/rule
@@ -872,33 +1028,6 @@ window: window/CMakeFiles/window.dir/rule
 window/CMakeFiles/window.dir/clean:
 	$(MAKE) $(MAKESILENT) -f window\CMakeFiles\window.dir\build.make window/CMakeFiles/window.dir/clean
 .PHONY : window/CMakeFiles/window.dir/clean
-
-#=============================================================================
-# Target rules for target mef/CMakeFiles/mef.dir
-
-# All Build rule for target.
-mef/CMakeFiles/mef.dir/all: threadHandler/CMakeFiles/threadHandler.dir/all
-	$(MAKE) $(MAKESILENT) -f mef\CMakeFiles\mef.dir\build.make mef/CMakeFiles/mef.dir/depend
-	$(MAKE) $(MAKESILENT) -f mef\CMakeFiles\mef.dir\build.make mef/CMakeFiles/mef.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=9,10 "Built target mef"
-.PHONY : mef/CMakeFiles/mef.dir/all
-
-# Build rule for subdir invocation for target.
-mef/CMakeFiles/mef.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mef/CMakeFiles/mef.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
-.PHONY : mef/CMakeFiles/mef.dir/rule
-
-# Convenience name for target.
-mef: mef/CMakeFiles/mef.dir/rule
-
-.PHONY : mef
-
-# clean rule for target.
-mef/CMakeFiles/mef.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mef\CMakeFiles\mef.dir\build.make mef/CMakeFiles/mef.dir/clean
-.PHONY : mef/CMakeFiles/mef.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

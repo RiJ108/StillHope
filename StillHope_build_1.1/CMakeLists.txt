@@ -17,12 +17,13 @@ add_library(
     lib/glad/glad.c
 )
 
-add_subdirectory("threadHandler")
 add_subdirectory("shader")
 add_subdirectory("entity")
+add_subdirectory("player")
+add_subdirectory("perlinNoise")
+add_subdirectory("world")
 add_subdirectory("generator")
 add_subdirectory("window")
-add_subdirectory("mef")
 
 add_executable(StillHope_build_1.1 StillHope_build_1.1.cpp)
 

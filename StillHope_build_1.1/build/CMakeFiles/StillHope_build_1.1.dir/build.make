@@ -99,10 +99,11 @@ StillHope_build_1_1_EXTERNAL_OBJECTS =
 bin/StillHope_build_1.1.exe: CMakeFiles/StillHope_build_1.1.dir/StillHope_build_1.1.cpp.obj
 bin/StillHope_build_1.1.exe: CMakeFiles/StillHope_build_1.1.dir/build.make
 bin/StillHope_build_1.1.exe: lib/libwindow-d.dll.a
-bin/StillHope_build_1.1.exe: lib/libthreadHandler-d.dll.a
 bin/StillHope_build_1.1.exe: lib/libentity-d.dll.a
+bin/StillHope_build_1.1.exe: lib/libplayer-d.dll.a
 bin/StillHope_build_1.1.exe: lib/libshader-d.dll.a
 bin/StillHope_build_1.1.exe: lib/libgenerator-d.dll.a
+bin/StillHope_build_1.1.exe: lib/libperlinNoise-d.dll.a
 bin/StillHope_build_1.1.exe: lib/libglad.dll.a
 bin/StillHope_build_1.1.exe: CMakeFiles/StillHope_build_1.1.dir/linklibs.rsp
 bin/StillHope_build_1.1.exe: CMakeFiles/StillHope_build_1.1.dir/objects1.rsp

@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../player/include/player/player.hpp
+shader/shader.hpp
+../player/include/player/shader/shader.hpp
+
+../shader/include/shader/shader.hpp
+glad/glad.h
+-
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+glm/gtc/type_ptr.hpp
+-
+glm/gtx/vector_angle.hpp
+-
+string
+-
+fstream
+-
+sstream
+-
+iostream
+-
+cstdlib
+-
+vector
+-
+
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/player/src/player/player.cpp
+player/player.hpp
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/player/src/player/player/player.hpp
+

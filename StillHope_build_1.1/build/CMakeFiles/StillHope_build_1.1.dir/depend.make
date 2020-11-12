@@ -3,8 +3,8 @@
 
 CMakeFiles/StillHope_build_1.1.dir/StillHope_build_1.1.cpp.obj: ../entity/include/entity/entity.hpp
 CMakeFiles/StillHope_build_1.1.dir/StillHope_build_1.1.cpp.obj: ../generator/include/generator/generator.hpp
+CMakeFiles/StillHope_build_1.1.dir/StillHope_build_1.1.cpp.obj: ../player/include/player/player.hpp
 CMakeFiles/StillHope_build_1.1.dir/StillHope_build_1.1.cpp.obj: ../shader/include/shader/shader.hpp
-CMakeFiles/StillHope_build_1.1.dir/StillHope_build_1.1.cpp.obj: ../threadHandler/include/threadHandler/threadHandler.hpp
 CMakeFiles/StillHope_build_1.1.dir/StillHope_build_1.1.cpp.obj: ../window/include/window/window.hpp
 CMakeFiles/StillHope_build_1.1.dir/StillHope_build_1.1.cpp.obj: ../StillHope_build_1.1.cpp
 

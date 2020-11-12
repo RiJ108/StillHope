@@ -10,11 +10,6 @@
   "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/StillHope_build_1.1.cpp"
 },
 {
-  "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/threadHandler",
-  "command": "C:\\MinGW\\bin\\g++.exe -DthreadHandler_EXPORTS @CMakeFiles/threadHandler.dir/includes_CXX.rsp -std=c++0x -g -o CMakeFiles\\threadHandler.dir\\src\\threadHandler\\threadHandler.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.1\\threadHandler\\src\\threadHandler\\threadHandler.cpp",
-  "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/threadHandler/src/threadHandler/threadHandler.cpp"
-},
-{
   "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/shader",
   "command": "C:\\MinGW\\bin\\g++.exe -Dshader_EXPORTS @CMakeFiles/shader.dir/includes_CXX.rsp -std=c++0x -g -o CMakeFiles\\shader.dir\\src\\shader\\shader.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.1\\shader\\src\\shader\\shader.cpp",
   "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/shader/src/shader/shader.cpp"
@@ -25,6 +20,21 @@
   "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/entity/src/entity/entity.cpp"
 },
 {
+  "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/player",
+  "command": "C:\\MinGW\\bin\\g++.exe -Dplayer_EXPORTS @CMakeFiles/player.dir/includes_CXX.rsp -std=c++0x -g -o CMakeFiles\\player.dir\\src\\player\\player.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.1\\player\\src\\player\\player.cpp",
+  "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/player/src/player/player.cpp"
+},
+{
+  "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/perlinNoise",
+  "command": "C:\\MinGW\\bin\\g++.exe -DperlinNoise_EXPORTS @CMakeFiles/perlinNoise.dir/includes_CXX.rsp -std=c++0x -g -o CMakeFiles\\perlinNoise.dir\\src\\perlinNoise\\perlinNoise.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.1\\perlinNoise\\src\\perlinNoise\\perlinNoise.cpp",
+  "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/perlinNoise/src/perlinNoise/perlinNoise.cpp"
+},
+{
+  "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/world",
+  "command": "C:\\MinGW\\bin\\g++.exe -Dworld_EXPORTS @CMakeFiles/world.dir/includes_CXX.rsp -std=c++0x -g -o CMakeFiles\\world.dir\\src\\world\\world.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.1\\world\\src\\world\\world.cpp",
+  "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/world/src/world/world.cpp"
+},
+{
   "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/generator",
   "command": "C:\\MinGW\\bin\\g++.exe -Dgenerator_EXPORTS @CMakeFiles/generator.dir/includes_CXX.rsp -std=c++0x -g -o CMakeFiles\\generator.dir\\src\\generator\\generator.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.1\\generator\\src\\generator\\generator.cpp",
   "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/generator/src/generator/generator.cpp"
@@ -33,10 +43,5 @@
   "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/window",
   "command": "C:\\MinGW\\bin\\g++.exe -Dwindow_EXPORTS @CMakeFiles/window.dir/includes_CXX.rsp -std=c++0x -g -o CMakeFiles\\window.dir\\src\\window\\window.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.1\\window\\src\\window\\window.cpp",
   "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/window/src/window/window.cpp"
-},
-{
-  "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/mef",
-  "command": "C:\\MinGW\\bin\\g++.exe -Dmef_EXPORTS @CMakeFiles/mef.dir/includes_CXX.rsp -std=c++0x -g -o CMakeFiles\\mef.dir\\src\\mef\\mef.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.1\\mef\\src\\mef\\mef.cpp",
-  "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/mef/src/mef/mef.cpp"
 }
 ]

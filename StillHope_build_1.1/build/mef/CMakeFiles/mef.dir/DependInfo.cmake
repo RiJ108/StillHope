@@ -17,13 +17,10 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../mef/include"
   "mef"
-  "../threadHandler/include"
-  "threadHandler"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/threadHandler/CMakeFiles/threadHandler.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

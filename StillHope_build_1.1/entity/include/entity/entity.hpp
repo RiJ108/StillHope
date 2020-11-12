@@ -10,7 +10,9 @@ public:
     void fillBuffers();
     void render(Shader shader);
     vec3 getPosition();
+    void setPosition(vec3 position);
     vec3 getFront();
+    void setFront(vec3 front);
 private:
     vec3 position = vec3(0.0f);
     vec3 front = vec3(1.0f, 0.0f, 0.0f);

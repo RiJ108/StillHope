@@ -23,8 +23,16 @@ vec3 Entity::getPosition(){
     return position;
 }
 
+void Entity::setPosition(vec3 position){
+    this->position = position;
+}
+
 vec3 Entity::getFront(){
     return front;
+}
+
+void Entity::setFront(vec3 front){
+    this->front = front;
 }
 
 void Entity::render(Shader shader){

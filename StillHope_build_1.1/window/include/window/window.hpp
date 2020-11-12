@@ -5,11 +5,15 @@
 #include <vector>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <unistd.h>
 #include "shader/shader.hpp"
-#include "threadHandler/threadHandler.hpp"
 #include "entity/entity.hpp"
 #include "generator/generator.hpp"
+#include "player/player.hpp"
 
+void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
+void mouse_callback(GLFWwindow* window, double xpos, double ypos);
+void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 using namespace std;
 
 class Window{
@@ -33,6 +37,7 @@ private:
     float currentFrame = 0.0f;
     Shader shader3D;
     Generator generator;
+    Player player;
     int currentState = 0;
     int nextState;
     int fpsCap = 60;

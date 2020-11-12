@@ -4,7 +4,7 @@
 window/CMakeFiles/window.dir/src/window/window.cpp.obj
  ../entity/include/entity/entity.hpp
  ../generator/include/generator/generator.hpp
+ ../player/include/player/player.hpp
  ../shader/include/shader/shader.hpp
- ../threadHandler/include/threadHandler/threadHandler.hpp
  ../window/include/window/window.hpp
  D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/window/src/window/window.cpp

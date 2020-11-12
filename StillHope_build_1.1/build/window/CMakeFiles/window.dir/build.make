@@ -98,11 +98,12 @@ window_EXTERNAL_OBJECTS =
 
 bin/libwindow-d.dll: window/CMakeFiles/window.dir/src/window/window.cpp.obj
 bin/libwindow-d.dll: window/CMakeFiles/window.dir/build.make
-bin/libwindow-d.dll: lib/libthreadHandler-d.dll.a
 bin/libwindow-d.dll: lib/libentity-d.dll.a
+bin/libwindow-d.dll: lib/libplayer-d.dll.a
 bin/libwindow-d.dll: lib/libgenerator-d.dll.a
 bin/libwindow-d.dll: lib/libshader-d.dll.a
 bin/libwindow-d.dll: lib/libglad.dll.a
+bin/libwindow-d.dll: lib/libperlinNoise-d.dll.a
 bin/libwindow-d.dll: window/CMakeFiles/window.dir/linklibs.rsp
 bin/libwindow-d.dll: window/CMakeFiles/window.dir/objects1.rsp
 bin/libwindow-d.dll: window/CMakeFiles/window.dir/link.txt

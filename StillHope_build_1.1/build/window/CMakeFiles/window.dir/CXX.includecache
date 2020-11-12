@@ -20,6 +20,10 @@ pthread.h
 semaphore.h
 -
 
+../player/include/player/player.hpp
+shader/shader.hpp
+../player/include/player/shader/shader.hpp
+
 ../shader/include/shader/shader.hpp
 glad/glad.h
 -
@@ -44,14 +48,6 @@ cstdlib
 vector
 -
 
-../threadHandler/include/threadHandler/threadHandler.hpp
-iostream
--
-pthread.h
--
-semaphore.h
--
-
 ../window/include/window/window.hpp
 iostream
 -
@@ -61,14 +57,16 @@ glad/glad.h
 -
 GLFW/glfw3.h
 -
+unistd.h
+-
 shader/shader.hpp
 ../window/include/window/shader/shader.hpp
-threadHandler/threadHandler.hpp
-../window/include/window/threadHandler/threadHandler.hpp
 entity/entity.hpp
 ../window/include/window/entity/entity.hpp
 generator/generator.hpp
 ../window/include/window/generator/generator.hpp
+player/player.hpp
+../window/include/window/player/player.hpp
 
 D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/window/src/window/window.cpp
 window/window.hpp

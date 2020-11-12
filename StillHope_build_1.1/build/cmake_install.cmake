@@ -39,11 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/threadHandler/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/shader/cmake_install.cmake")
 endif()
 
@@ -54,17 +49,27 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/player/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/perlinNoise/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/world/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/generator/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/window/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/mef/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

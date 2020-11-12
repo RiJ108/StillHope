@@ -20,8 +20,10 @@ void* genThreadRun(void* obj_param){
         sem_wait(internal->getMutex(0));
         cout << "GENTHREAD::Got the mutex" << endl;
         Sleep(1000);
+        internal->setNeedGen(false);
         cout << "GENTHREAD::Finished, loader flaged" << endl;
-        sem_post(internal->getMutex(0));
+        sem_post(internal->getMutex(1));
+        //sem_post(internal->getMutex(0));
     }
     return NULL;
 }
@@ -34,7 +36,7 @@ void* loadThreadRun(void* obj_param){
         sem_wait(internal->getMutex(1));
         cout << "LOADTHREAD::Got the mutex" << endl;
         Sleep(500);
-        sem_post(internal->getMutex(1));
+        //sem_post(internal->getMutex(1));
     }
     return NULL;
 }

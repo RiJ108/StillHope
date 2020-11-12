@@ -22,4 +22,5 @@ add_subdirectory("src")
 target_link_libraries( 
    "${LIB_NAME}"
    pthread.a
+   perlinNoise
 ) 

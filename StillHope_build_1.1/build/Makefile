@@ -201,19 +201,6 @@ StillHope_build_1.1/fast:
 .PHONY : StillHope_build_1.1/fast
 
 #=============================================================================
-# Target rules for targets named threadHandler
-
-# Build rule for target.
-threadHandler: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 threadHandler
-.PHONY : threadHandler
-
-# fast build rule for target.
-threadHandler/fast:
-	$(MAKE) $(MAKESILENT) -f threadHandler\CMakeFiles\threadHandler.dir\build.make threadHandler/CMakeFiles/threadHandler.dir/build
-.PHONY : threadHandler/fast
-
-#=============================================================================
 # Target rules for targets named shader
 
 # Build rule for target.
@@ -240,6 +227,45 @@ entity/fast:
 .PHONY : entity/fast
 
 #=============================================================================
+# Target rules for targets named player
+
+# Build rule for target.
+player: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 player
+.PHONY : player
+
+# fast build rule for target.
+player/fast:
+	$(MAKE) $(MAKESILENT) -f player\CMakeFiles\player.dir\build.make player/CMakeFiles/player.dir/build
+.PHONY : player/fast
+
+#=============================================================================
+# Target rules for targets named perlinNoise
+
+# Build rule for target.
+perlinNoise: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 perlinNoise
+.PHONY : perlinNoise
+
+# fast build rule for target.
+perlinNoise/fast:
+	$(MAKE) $(MAKESILENT) -f perlinNoise\CMakeFiles\perlinNoise.dir\build.make perlinNoise/CMakeFiles/perlinNoise.dir/build
+.PHONY : perlinNoise/fast
+
+#=============================================================================
+# Target rules for targets named world
+
+# Build rule for target.
+world: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 world
+.PHONY : world
+
+# fast build rule for target.
+world/fast:
+	$(MAKE) $(MAKESILENT) -f world\CMakeFiles\world.dir\build.make world/CMakeFiles/world.dir/build
+.PHONY : world/fast
+
+#=============================================================================
 # Target rules for targets named generator
 
 # Build rule for target.
@@ -264,19 +290,6 @@ window: cmake_check_build_system
 window/fast:
 	$(MAKE) $(MAKESILENT) -f window\CMakeFiles\window.dir\build.make window/CMakeFiles/window.dir/build
 .PHONY : window/fast
-
-#=============================================================================
-# Target rules for targets named mef
-
-# Build rule for target.
-mef: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mef
-.PHONY : mef
-
-# fast build rule for target.
-mef/fast:
-	$(MAKE) $(MAKESILENT) -f mef\CMakeFiles\mef.dir\build.make mef/CMakeFiles/mef.dir/build
-.PHONY : mef/fast
 
 StillHope_build_1.1.obj: StillHope_build_1.1.cpp.obj
 
@@ -348,10 +361,11 @@ help:
 	@echo ... entity
 	@echo ... generator
 	@echo ... glad
-	@echo ... mef
+	@echo ... perlinNoise
+	@echo ... player
 	@echo ... shader
-	@echo ... threadHandler
 	@echo ... window
+	@echo ... world
 	@echo ... StillHope_build_1.1.obj
 	@echo ... StillHope_build_1.1.i
 	@echo ... StillHope_build_1.1.s

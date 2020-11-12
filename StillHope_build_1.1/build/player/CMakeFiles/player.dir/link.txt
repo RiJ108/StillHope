@@ -1,0 +1,3 @@
+C:\CMake\bin\cmake.exe -E rm -f CMakeFiles\player.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\player.dir/objects.a @CMakeFiles\player.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -std=c++0x -g -shared -o ..\bin\libplayer-d.dll -Wl,--out-implib,..\lib\libplayer-d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\player.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\player.dir\linklibs.rsp

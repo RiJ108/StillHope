@@ -6,15 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../generator/include/generator/generator.hpp
-iostream
--
-pthread.h
--
-semaphore.h
--
-
-D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/generator/src/generator/generator.cpp
-generator/generator.hpp
-D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/generator/src/generator/generator/generator.hpp
-

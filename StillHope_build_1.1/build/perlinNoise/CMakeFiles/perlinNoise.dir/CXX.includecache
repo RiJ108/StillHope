@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../perlinNoise/include/perlinNoise/perlinNoise.hpp
+vector
+-
+numeric
+-
+random
+-
+algorithm
+-
+
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/perlinNoise/src/perlinNoise/perlinNoise.cpp
+perlinNoise/perlinNoise.hpp
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/perlinNoise/src/perlinNoise/perlinNoise/perlinNoise.hpp
+
