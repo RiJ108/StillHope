@@ -43,8 +43,6 @@ void Window::loop(){
     Entity entity;
     entity.fillBuffers();
 
-    //**Generator set-up
-
     //**Camera settings
     vec3 position = vec3(-2.0f, 0.0f, 0.0f);
     vec3 up = vec3(0.0f, 1.0f, 0.0f);
@@ -70,7 +68,7 @@ void Window::loop(){
         position.z = sin(glfwGetTime())*2;*/
 
         //**Rotate the entity on his Y-axis
-        entity.setFront(vec3(cos(glfwGetTime())/2.0, 0.0f, sin(glfwGetTime())/2.0));
+        //entity.setFront(vec3(cos(glfwGetTime())/2.0, 0.0f, sin(glfwGetTime())/2.0));
 
         //**Process key press
         processInputs(window);
@@ -82,6 +80,7 @@ void Window::loop(){
 
         //**Setting shader's uniform
         shader3D.use();
+        shader3D.setVec3("frontView", player.getFront());
         shader3D.setMat4("view", player.look());
         shader3D.setVec3("viewPos", player.getPosition());
 
@@ -97,6 +96,10 @@ void Window::loop(){
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
+}
+
+Player Window::getPlayer(){
+    return player;
 }
 
 void Window::processInputs(GLFWwindow* window){
@@ -133,7 +136,10 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 }
 
 void mouse_callback(GLFWwindow* window, double xpos, double ypos){
-    //if(glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS)
+    //globalWindow->getPlayer()->moveM(xpos, ypos);
+    if(glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS){
+        //globalWindow->getPlayer()->moveM(xpos, ypos);
+    }
 }
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height){

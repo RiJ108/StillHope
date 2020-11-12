@@ -14,10 +14,18 @@ public:
     void setFront(vec3 value);
     mat4 look();
     void moveK(char key, float deltaT);
+    void moveM(double x, double y);
 private:
     vec3 position;
     vec3 up;
     vec3 front;
+
+    bool firstMouse = true;
+    float yaw_   = 0.0f;
+    float pitch_ =  -90.0f;
+    float lastX = (2.0f*1280.0f)/2.0f;
+    float lastY = (1.5f*720.0f)/2.0f;
+    float speed_ = 4.0f;
 };
 
 #endif 

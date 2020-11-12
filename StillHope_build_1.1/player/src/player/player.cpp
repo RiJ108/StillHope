@@ -32,7 +32,7 @@ void Player::setFront(vec3 value){
 }
 
 mat4 Player::look(){
-    return lookAt(position, vec3(0.0f), up);
+    return lookAt(position, front, up);
 }
 
 void Player::moveK(char key, float deltaT){
@@ -40,10 +40,46 @@ void Player::moveK(char key, float deltaT){
     switch(key){
         case 'Z':
             delta = deltaT * 1.5f * normalize(vec3(front.x, 0.0f, front.z));
+            position += delta;
             break;
         case 'S':
             delta = -deltaT * 1.0f * normalize(vec3(front.x, 0.0f, front.z));
+            position += delta;
+            break;
+        case 'Q':
+            delta = -deltaT * 1.0f * normalize(vec3(-front.z, 0.0f, front.x));
+            position += delta;
+            break;
+        case 'D':
+            delta = deltaT * 1.0f * normalize(vec3(-front.z, 0.0f, front.x));
+            position += delta;
             break;
     }
-    position += delta;
+}
+
+void Player::moveM(double x, double y){
+    if (firstMouse){
+        lastX = x;
+        lastY = y;
+        firstMouse = false;
+    }
+
+    float xoffset = x - lastX;
+    float yoffset = lastY - y;
+    lastX = x;
+    lastY = y;
+
+    float sensitivity = 0.1f;
+    xoffset *= sensitivity;
+    yoffset *= sensitivity;
+
+    yaw_   += xoffset;
+    pitch_ += yoffset;
+
+    if(pitch_ > 89.0f)
+        pitch_ = 89.0f;
+    if(pitch_ < -89.0f)
+        pitch_ = -89.0f;
+    
+    front = normalize(vec3(cos(radians(yaw_)) * cos(radians(pitch_)), sin(radians(pitch_)), sin(radians(yaw_)) * cos(radians(pitch_))));
 }
