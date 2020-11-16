@@ -2,13 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/libworld-d.dll"
+			"path" : "bin/libplayer-d.dll"
 		},
 		{
-			"path" : "lib/libworld-d.dll.a"
+			"path" : "lib/libplayer-d.dll.a"
 		},
 		{
-			"path" : "bin/libworld-d.pdb"
+			"path" : "bin/libplayer-d.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -23,7 +23,7 @@
 		],
 		"files" : 
 		[
-			"world/CMakeLists.txt"
+			"player/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -74,18 +74,18 @@
 			"defines" : 
 			[
 				{
-					"define" : "world_EXPORTS"
+					"define" : "player_EXPORTS"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
-					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/world/include"
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/player/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/world"
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/player"
 				},
 				{
 					"backtrace" : 2,
@@ -107,14 +107,14 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "shader::@2bbbf1053401b8be33b8"
+			"id" : "glad::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "glad::@6890427a1f51a3e7e1df"
+			"id" : "shader::@2bbbf1053401b8be33b8"
 		}
 	],
-	"id" : "world::@420baf620e3fcd9b3715",
+	"id" : "player::@6e497030d9506a5b7385",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -155,12 +155,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "world",
-	"nameOnDisk" : "libworld-d.dll",
+	"name" : "player",
+	"nameOnDisk" : "libplayer-d.dll",
 	"paths" : 
 	{
-		"build" : "world",
-		"source" : "world"
+		"build" : "player",
+		"source" : "player"
 	},
 	"sourceGroups" : 
 	[
@@ -183,13 +183,13 @@
 	[
 		{
 			"backtrace" : 4,
-			"path" : "world/include/world/world.hpp",
+			"path" : "player/include/player/player.hpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
-			"path" : "world/src/world/world.cpp",
+			"path" : "player/src/player/player.cpp",
 			"sourceGroupIndex" : 1
 		}
 	],

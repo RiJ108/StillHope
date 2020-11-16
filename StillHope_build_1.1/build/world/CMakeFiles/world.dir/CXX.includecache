@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+../generator/include/generator/generator.hpp
+iostream
+-
+vector
+-
+shader/shader.hpp
+../generator/include/generator/shader/shader.hpp
+perlinNoise/perlinNoise.hpp
+../generator/include/generator/perlinNoise/perlinNoise.hpp
+
+../perlinNoise/include/perlinNoise/perlinNoise.hpp
+vector
+-
+numeric
+-
+random
+-
+algorithm
+-
+
 ../shader/include/shader/shader.hpp
 glad/glad.h
 -
@@ -33,6 +53,16 @@ vector
 ../world/include/world/world.hpp
 shader/shader.hpp
 ../world/include/world/shader/shader.hpp
+generator/generator.hpp
+../world/include/world/generator/generator.hpp
+worldSegment/worldSegment.hpp
+../world/include/world/worldSegment/worldSegment.hpp
+
+../worldSegment/include/worldSegment/worldSegment.hpp
+iostream
+-
+vector
+-
 
 D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/world/src/world/world.cpp
 world/world.hpp

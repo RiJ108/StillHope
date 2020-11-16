@@ -76,6 +76,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../world/include/world/CMakeLists.txt"
   "../world/src/CMakeLists.txt"
   "../world/src/world/CMakeLists.txt"
+  "../worldSegment/CMakeLists.txt"
+  "../worldSegment/include/CMakeLists.txt"
+  "../worldSegment/include/worldSegment/CMakeLists.txt"
+  "../worldSegment/src/CMakeLists.txt"
+  "../worldSegment/src/worldSegment/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -111,6 +116,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "perlinNoise/include/perlinNoise/CMakeFiles/CMakeDirectoryInformation.cmake"
   "perlinNoise/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "perlinNoise/src/perlinNoise/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "worldSegment/worldsegment_export.h"
+  "worldSegment/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "worldSegment/include/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "worldSegment/include/worldSegment/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "worldSegment/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "worldSegment/src/worldSegment/CMakeFiles/CMakeDirectoryInformation.cmake"
   "world/world_export.h"
   "world/CMakeFiles/CMakeDirectoryInformation.cmake"
   "world/include/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -139,6 +150,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "entity/CMakeFiles/entity.dir/DependInfo.cmake"
   "player/CMakeFiles/player.dir/DependInfo.cmake"
   "perlinNoise/CMakeFiles/perlinNoise.dir/DependInfo.cmake"
+  "worldSegment/CMakeFiles/worldSegment.dir/DependInfo.cmake"
   "world/CMakeFiles/world.dir/DependInfo.cmake"
   "generator/CMakeFiles/generator.dir/DependInfo.cmake"
   "window/CMakeFiles/window.dir/DependInfo.cmake"

@@ -2,13 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/libplayer-d.dll"
+			"path" : "bin/libentity-d.dll"
 		},
 		{
-			"path" : "lib/libplayer-d.dll.a"
+			"path" : "lib/libentity-d.dll.a"
 		},
 		{
-			"path" : "bin/libplayer-d.pdb"
+			"path" : "bin/libentity-d.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -23,7 +23,7 @@
 		],
 		"files" : 
 		[
-			"player/CMakeLists.txt"
+			"entity/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -74,18 +74,18 @@
 			"defines" : 
 			[
 				{
-					"define" : "player_EXPORTS"
+					"define" : "entity_EXPORTS"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
-					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/player/include"
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/entity/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/player"
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/entity"
 				},
 				{
 					"backtrace" : 2,
@@ -107,14 +107,14 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "shader::@2bbbf1053401b8be33b8"
+			"id" : "glad::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "glad::@6890427a1f51a3e7e1df"
+			"id" : "shader::@2bbbf1053401b8be33b8"
 		}
 	],
-	"id" : "player::@6e497030d9506a5b7385",
+	"id" : "entity::@d6c2e1204b3d8d4a55e1",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -155,12 +155,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "player",
-	"nameOnDisk" : "libplayer-d.dll",
+	"name" : "entity",
+	"nameOnDisk" : "libentity-d.dll",
 	"paths" : 
 	{
-		"build" : "player",
-		"source" : "player"
+		"build" : "entity",
+		"source" : "entity"
 	},
 	"sourceGroups" : 
 	[
@@ -183,13 +183,13 @@
 	[
 		{
 			"backtrace" : 4,
-			"path" : "player/include/player/player.hpp",
+			"path" : "entity/include/entity/entity.hpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
-			"path" : "player/src/player/player.cpp",
+			"path" : "entity/src/entity/entity.cpp",
 			"sourceGroupIndex" : 1
 		}
 	],

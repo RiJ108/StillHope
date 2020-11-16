@@ -2,10 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/StillHope_build_1.1.exe"
+			"path" : "bin/libwindow-d.dll"
 		},
 		{
-			"path" : "bin/StillHope_build_1.1.pdb"
+			"path" : "lib/libwindow-d.dll.a"
+		},
+		{
+			"path" : "bin/libwindow-d.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -13,12 +16,14 @@
 	{
 		"commands" : 
 		[
-			"add_executable",
-			"target_link_libraries"
+			"add_library",
+			"target_link_libraries",
+			"target_include_directories",
+			"add_subdirectory"
 		],
 		"files" : 
 		[
-			"CMakeLists.txt"
+			"window/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -28,13 +33,31 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 28,
+				"line" : 2,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 30,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 21,
 				"parent" : 0
 			}
 		]
@@ -48,23 +71,21 @@
 					"fragment" : "-std=c++0x -g"
 				}
 			],
+			"defines" : 
+			[
+				{
+					"define" : "window_EXPORTS"
+				}
+			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/window/include"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/window"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/shader/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/shader"
 				},
 				{
 					"backtrace" : 2,
@@ -76,11 +97,27 @@
 				},
 				{
 					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/shader/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/shader"
+				},
+				{
+					"backtrace" : 2,
 					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/player/include"
 				},
 				{
 					"backtrace" : 2,
 					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/player"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/world/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/world"
 				},
 				{
 					"backtrace" : 2,
@@ -97,12 +134,20 @@
 				{
 					"backtrace" : 2,
 					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/perlinNoise"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/worldSegment/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/worldSegment"
 				}
 			],
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
-				0
+				1
 			]
 		}
 	],
@@ -110,11 +155,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "shader::@2bbbf1053401b8be33b8"
+			"id" : "glad::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "glad::@6890427a1f51a3e7e1df"
+			"id" : "shader::@2bbbf1053401b8be33b8"
 		},
 		{
 			"backtrace" : 2,
@@ -122,53 +167,47 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "player::@6e497030d9506a5b7385"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "perlinNoise::@6616263045787052ce45"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "generator::@57ab67fb902b11eae714"
+			"id" : "player::@6e497030d9506a5b7385"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "window::@042a9f56126fb90ddaf9"
+			"id" : "worldSegment::@5f574d2acbbff600729f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "world::@420baf620e3fcd9b3715"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "generator::@57ab67fb902b11eae714"
 		}
 	],
-	"id" : "StillHope_build_1.1::@6890427a1f51a3e7e1df",
+	"id" : "window::@042a9f56126fb90ddaf9",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-std=c++0x -g",
-				"role" : "flags"
-			},
 			{
 				"fragment" : "",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\libwindow-d.dll.a",
+				"fragment" : "..\\lib\\libentity-d.dll.a",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "lib\\libentity-d.dll.a",
+				"backtrace" : 2,
+				"fragment" : "..\\lib\\libplayer-d.dll.a",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "lib\\libplayer-d.dll.a",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "lib\\libshader-d.dll.a",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "lib\\libgenerator-d.dll.a",
+				"backtrace" : 2,
+				"fragment" : "..\\lib\\libworld-d.dll.a",
 				"role" : "libraries"
 			},
 			{
@@ -176,26 +215,12 @@
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "-lpthread",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "-Wl,-Bdynamic",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "lib\\libperlinNoise-d.dll.a",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "-Wl,-Bstatic",
-				"role" : "libraries"
-			},
-			{
+				"backtrace" : 2,
 				"fragment" : "-lglfw3",
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 2,
 				"fragment" : "-lgdi32",
 				"role" : "libraries"
 			},
@@ -204,7 +229,42 @@
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "lib\\libglad.dll.a",
+				"fragment" : "..\\lib\\libgenerator-d.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "..\\lib\\libshader-d.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bstatic",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lglfw3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lgdi32",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bdynamic",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "..\\lib\\libglad.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "..\\lib\\libperlinNoise-d.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "..\\lib\\libworldSegment-d.dll.a",
 				"role" : "libraries"
 			},
 			{
@@ -214,31 +274,43 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "StillHope_build_1.1",
-	"nameOnDisk" : "StillHope_build_1.1.exe",
+	"name" : "window",
+	"nameOnDisk" : "libwindow-d.dll",
 	"paths" : 
 	{
-		"build" : ".",
-		"source" : "."
+		"build" : "window",
+		"source" : "window"
 	},
 	"sourceGroups" : 
 	[
 		{
-			"name" : "Source Files",
+			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
 				0
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1
 			]
 		}
 	],
 	"sources" : 
 	[
 		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "StillHope_build_1.1.cpp",
+			"backtrace" : 4,
+			"path" : "window/include/window/window.hpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "window/src/window/window.cpp",
+			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "EXECUTABLE"
+	"type" : "SHARED_LIBRARY"
 }

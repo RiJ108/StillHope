@@ -253,6 +253,19 @@ perlinNoise/fast:
 .PHONY : perlinNoise/fast
 
 #=============================================================================
+# Target rules for targets named worldSegment
+
+# Build rule for target.
+worldSegment: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worldSegment
+.PHONY : worldSegment
+
+# fast build rule for target.
+worldSegment/fast:
+	$(MAKE) $(MAKESILENT) -f worldSegment\CMakeFiles\worldSegment.dir\build.make worldSegment/CMakeFiles/worldSegment.dir/build
+.PHONY : worldSegment/fast
+
+#=============================================================================
 # Target rules for targets named world
 
 # Build rule for target.
@@ -366,6 +379,7 @@ help:
 	@echo ... shader
 	@echo ... window
 	@echo ... world
+	@echo ... worldSegment
 	@echo ... StillHope_build_1.1.obj
 	@echo ... StillHope_build_1.1.i
 	@echo ... StillHope_build_1.1.s

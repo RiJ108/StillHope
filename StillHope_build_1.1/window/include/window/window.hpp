@@ -1,21 +1,18 @@
 #ifndef WINDOW_HPP
 #define WINDOW_HPP
 
-#include <iostream>
-#include <vector>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <unistd.h>
-#include "shader/shader.hpp"
 #include "entity/entity.hpp"
-#include "generator/generator.hpp"
 #include "player/player.hpp"
+#include "world/world.hpp"
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 
 using namespace std;
+Player* gPlayer;
 
 class Window{
 public:
@@ -40,6 +37,7 @@ private:
     Shader shader3D;
     Generator generator;
     Player player;
+    World world;
     int currentState = 0;
     int nextState;
     int fpsCap = 60;

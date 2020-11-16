@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../worldSegment/include/worldSegment/worldSegment.hpp
+iostream
+-
+vector
+-
+
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/worldSegment/src/worldSegment/worldSegment.cpp
+worldSegment/worldSegment.hpp
+D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/worldSegment/src/worldSegment/worldSegment/worldSegment.hpp
+

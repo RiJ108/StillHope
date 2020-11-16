@@ -21,6 +21,7 @@ add_subdirectory("shader")
 add_subdirectory("entity")
 add_subdirectory("player")
 add_subdirectory("perlinNoise")
+add_subdirectory("worldSegment")
 add_subdirectory("world")
 add_subdirectory("generator")
 add_subdirectory("window")
@@ -30,6 +31,7 @@ add_executable(StillHope_build_1.1 StillHope_build_1.1.cpp)
 target_link_libraries(
     StillHope_build_1.1
     window
+    world
     #libglfw3.a 
     #libgdi32.a
     #libfreetype.a

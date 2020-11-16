@@ -30,6 +30,11 @@
   "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/perlinNoise/src/perlinNoise/perlinNoise.cpp"
 },
 {
+  "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/worldSegment",
+  "command": "C:\\MinGW\\bin\\g++.exe -DworldSegment_EXPORTS @CMakeFiles/worldSegment.dir/includes_CXX.rsp -std=c++0x -g -o CMakeFiles\\worldSegment.dir\\src\\worldSegment\\worldSegment.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.1\\worldSegment\\src\\worldSegment\\worldSegment.cpp",
+  "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/worldSegment/src/worldSegment/worldSegment.cpp"
+},
+{
   "directory": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/world",
   "command": "C:\\MinGW\\bin\\g++.exe -Dworld_EXPORTS @CMakeFiles/world.dir/includes_CXX.rsp -std=c++0x -g -o CMakeFiles\\world.dir\\src\\world\\world.cpp.obj -c D:\\UserData\\Documents\\vscode-workspace\\StillHope\\StillHope_build_1.1\\world\\src\\world\\world.cpp",
   "file": "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/world/src/world/world.cpp"

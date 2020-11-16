@@ -2,7 +2,7 @@
 
 Player::Player(){
     cout << "PLAYER::New player" << endl;
-    position = vec3(-2.0f, 0.0f, 0.0f);
+    position = vec3(0.0f, 5.0f, 0.0f);
     up = vec3(0.0f, 1.0f, 0.0f);
     front = vec3(1.0f, 0.0f, 0.0f);
 }
@@ -32,15 +32,20 @@ void Player::setFront(vec3 value){
 }
 
 mat4 Player::look(){
-    return lookAt(position, front, up);
+    return lookAt(position, position + front, up);
+}
+
+void Player::running(){
+    speed_ = runningSpeed;
 }
 
 void Player::moveK(char key, float deltaT){
     vec3 delta;
     switch(key){
         case 'Z':
-            delta = deltaT * 1.5f * normalize(vec3(front.x, 0.0f, front.z));
+            delta = deltaT * 1.5f * speed_ * normalize(vec3(front.x, 0.0f, front.z));
             position += delta;
+            speed_ = defaultSpeed;
             break;
         case 'S':
             delta = -deltaT * 1.0f * normalize(vec3(front.x, 0.0f, front.z));
@@ -53,6 +58,12 @@ void Player::moveK(char key, float deltaT){
         case 'D':
             delta = deltaT * 1.0f * normalize(vec3(-front.z, 0.0f, front.x));
             position += delta;
+            break;
+        case 'd':
+            position += vec3(0.0f, -1.0f, 0.0f) * deltaT;
+            break;
+        case 'u':
+            position += vec3(0.0f, 1.0f, 0.0f) * deltaT;
             break;
     }
 }

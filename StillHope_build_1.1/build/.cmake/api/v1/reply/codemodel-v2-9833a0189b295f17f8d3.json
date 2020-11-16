@@ -14,7 +14,8 @@
 						16,
 						21,
 						26,
-						31
+						31,
+						36
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -318,11 +319,83 @@
 					"source" : "perlinNoise/src/perlinNoise"
 				},
 				{
-					"build" : "world",
+					"build" : "worldSegment",
 					"childIndexes" : 
 					[
 						22,
 						24
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "worldSegment",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "worldSegment/include",
+					"childIndexes" : 
+					[
+						23
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 21,
+					"projectIndex" : 0,
+					"source" : "worldSegment/include"
+				},
+				{
+					"build" : "worldSegment/include/worldSegment",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 22,
+					"projectIndex" : 0,
+					"source" : "worldSegment/include/worldSegment"
+				},
+				{
+					"build" : "worldSegment/src",
+					"childIndexes" : 
+					[
+						25
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 21,
+					"projectIndex" : 0,
+					"source" : "worldSegment/src"
+				},
+				{
+					"build" : "worldSegment/src/worldSegment",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.0"
+					},
+					"parentIndex" : 24,
+					"projectIndex" : 0,
+					"source" : "worldSegment/src/worldSegment"
+				},
+				{
+					"build" : "world",
+					"childIndexes" : 
+					[
+						27,
+						29
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -341,14 +414,14 @@
 					"build" : "world/include",
 					"childIndexes" : 
 					[
-						23
+						28
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.18.0"
 					},
-					"parentIndex" : 21,
+					"parentIndex" : 26,
 					"projectIndex" : 0,
 					"source" : "world/include"
 				},
@@ -359,7 +432,7 @@
 					{
 						"string" : "3.18.0"
 					},
-					"parentIndex" : 22,
+					"parentIndex" : 27,
 					"projectIndex" : 0,
 					"source" : "world/include/world"
 				},
@@ -367,14 +440,14 @@
 					"build" : "world/src",
 					"childIndexes" : 
 					[
-						25
+						30
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.18.0"
 					},
-					"parentIndex" : 21,
+					"parentIndex" : 26,
 					"projectIndex" : 0,
 					"source" : "world/src"
 				},
@@ -385,7 +458,7 @@
 					{
 						"string" : "3.18.0"
 					},
-					"parentIndex" : 24,
+					"parentIndex" : 29,
 					"projectIndex" : 0,
 					"source" : "world/src/world"
 				},
@@ -393,8 +466,8 @@
 					"build" : "generator",
 					"childIndexes" : 
 					[
-						27,
-						29
+						32,
+						34
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -413,14 +486,14 @@
 					"build" : "generator/include",
 					"childIndexes" : 
 					[
-						28
+						33
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.18.0"
 					},
-					"parentIndex" : 26,
+					"parentIndex" : 31,
 					"projectIndex" : 0,
 					"source" : "generator/include"
 				},
@@ -431,7 +504,7 @@
 					{
 						"string" : "3.18.0"
 					},
-					"parentIndex" : 27,
+					"parentIndex" : 32,
 					"projectIndex" : 0,
 					"source" : "generator/include/generator"
 				},
@@ -439,14 +512,14 @@
 					"build" : "generator/src",
 					"childIndexes" : 
 					[
-						30
+						35
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.18.0"
 					},
-					"parentIndex" : 26,
+					"parentIndex" : 31,
 					"projectIndex" : 0,
 					"source" : "generator/src"
 				},
@@ -457,7 +530,7 @@
 					{
 						"string" : "3.18.0"
 					},
-					"parentIndex" : 29,
+					"parentIndex" : 34,
 					"projectIndex" : 0,
 					"source" : "generator/src/generator"
 				},
@@ -465,8 +538,8 @@
 					"build" : "window",
 					"childIndexes" : 
 					[
-						32,
-						34
+						37,
+						39
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -485,14 +558,14 @@
 					"build" : "window/include",
 					"childIndexes" : 
 					[
-						33
+						38
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.18.0"
 					},
-					"parentIndex" : 31,
+					"parentIndex" : 36,
 					"projectIndex" : 0,
 					"source" : "window/include"
 				},
@@ -503,7 +576,7 @@
 					{
 						"string" : "3.18.0"
 					},
-					"parentIndex" : 32,
+					"parentIndex" : 37,
 					"projectIndex" : 0,
 					"source" : "window/include/window"
 				},
@@ -511,14 +584,14 @@
 					"build" : "window/src",
 					"childIndexes" : 
 					[
-						35
+						40
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.18.0"
 					},
-					"parentIndex" : 31,
+					"parentIndex" : 36,
 					"projectIndex" : 0,
 					"source" : "window/src"
 				},
@@ -529,7 +602,7 @@
 					{
 						"string" : "3.18.0"
 					},
-					"parentIndex" : 34,
+					"parentIndex" : 39,
 					"projectIndex" : 0,
 					"source" : "window/src/window"
 				}
@@ -575,7 +648,12 @@
 						32,
 						33,
 						34,
-						35
+						35,
+						36,
+						37,
+						38,
+						39,
+						40
 					],
 					"name" : "StillHope",
 					"targetIndexes" : 
@@ -588,7 +666,8 @@
 						5,
 						6,
 						7,
-						8
+						8,
+						9
 					]
 				}
 			],
@@ -597,21 +676,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "StillHope_build_1.1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-StillHope_build_1.1-Debug-02d5d3b2fba0206c9317.json",
+					"jsonFile" : "target-StillHope_build_1.1-Debug-987d575989d6fee10c54.json",
 					"name" : "StillHope_build_1.1",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 6,
 					"id" : "entity::@d6c2e1204b3d8d4a55e1",
-					"jsonFile" : "target-entity-Debug-0ec8e8c0b038f5350282.json",
+					"jsonFile" : "target-entity-Debug-a5f2023858fadd9fd8f8.json",
 					"name" : "entity",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 26,
+					"directoryIndex" : 31,
 					"id" : "generator::@57ab67fb902b11eae714",
-					"jsonFile" : "target-generator-Debug-6982e46de5e990adc199.json",
+					"jsonFile" : "target-generator-Debug-371b6e5f5c9ce4c4671b.json",
 					"name" : "generator",
 					"projectIndex" : 0
 				},
@@ -632,7 +711,7 @@
 				{
 					"directoryIndex" : 11,
 					"id" : "player::@6e497030d9506a5b7385",
-					"jsonFile" : "target-player-Debug-a449265b85e77b07fab3.json",
+					"jsonFile" : "target-player-Debug-02eb4e2e2e03ce348a57.json",
 					"name" : "player",
 					"projectIndex" : 0
 				},
@@ -644,17 +723,24 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 31,
+					"directoryIndex" : 36,
 					"id" : "window::@042a9f56126fb90ddaf9",
-					"jsonFile" : "target-window-Debug-20d782a800575ffac0fe.json",
+					"jsonFile" : "target-window-Debug-07100cc869c9d766cf6c.json",
 					"name" : "window",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 21,
+					"directoryIndex" : 26,
 					"id" : "world::@420baf620e3fcd9b3715",
-					"jsonFile" : "target-world-Debug-38e035dd6b48d93b9eee.json",
+					"jsonFile" : "target-world-Debug-47f90c110a2120666041.json",
 					"name" : "world",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "worldSegment::@5f574d2acbbff600729f",
+					"jsonFile" : "target-worldSegment-Debug-a20f588546edce50e112.json",
+					"name" : "worldSegment",
 					"projectIndex" : 0
 				}
 			]

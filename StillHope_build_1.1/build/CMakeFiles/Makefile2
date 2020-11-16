@@ -77,6 +77,7 @@ all: shader/all
 all: entity/all
 all: player/all
 all: perlinNoise/all
+all: worldSegment/all
 all: world/all
 all: generator/all
 all: window/all
@@ -88,6 +89,7 @@ preinstall: shader/preinstall
 preinstall: entity/preinstall
 preinstall: player/preinstall
 preinstall: perlinNoise/preinstall
+preinstall: worldSegment/preinstall
 preinstall: world/preinstall
 preinstall: generator/preinstall
 preinstall: window/preinstall
@@ -101,6 +103,7 @@ clean: shader/clean
 clean: entity/clean
 clean: player/clean
 clean: perlinNoise/clean
+clean: worldSegment/clean
 clean: world/clean
 clean: generator/clean
 clean: window/clean
@@ -773,6 +776,101 @@ world/src/world/clean:
 .PHONY : world/src/world/clean
 
 #=============================================================================
+# Directory level rules for directory worldSegment
+
+# Recursive "all" directory target.
+worldSegment/all: worldSegment/CMakeFiles/worldSegment.dir/all
+worldSegment/all: worldSegment/include/all
+worldSegment/all: worldSegment/src/all
+
+.PHONY : worldSegment/all
+
+# Recursive "preinstall" directory target.
+worldSegment/preinstall: worldSegment/include/preinstall
+worldSegment/preinstall: worldSegment/src/preinstall
+
+.PHONY : worldSegment/preinstall
+
+# Recursive "clean" directory target.
+worldSegment/clean: worldSegment/CMakeFiles/worldSegment.dir/clean
+worldSegment/clean: worldSegment/include/clean
+worldSegment/clean: worldSegment/src/clean
+
+.PHONY : worldSegment/clean
+
+#=============================================================================
+# Directory level rules for directory worldSegment/include
+
+# Recursive "all" directory target.
+worldSegment/include/all: worldSegment/include/worldSegment/all
+
+.PHONY : worldSegment/include/all
+
+# Recursive "preinstall" directory target.
+worldSegment/include/preinstall: worldSegment/include/worldSegment/preinstall
+
+.PHONY : worldSegment/include/preinstall
+
+# Recursive "clean" directory target.
+worldSegment/include/clean: worldSegment/include/worldSegment/clean
+
+.PHONY : worldSegment/include/clean
+
+#=============================================================================
+# Directory level rules for directory worldSegment/include/worldSegment
+
+# Recursive "all" directory target.
+worldSegment/include/worldSegment/all:
+
+.PHONY : worldSegment/include/worldSegment/all
+
+# Recursive "preinstall" directory target.
+worldSegment/include/worldSegment/preinstall:
+
+.PHONY : worldSegment/include/worldSegment/preinstall
+
+# Recursive "clean" directory target.
+worldSegment/include/worldSegment/clean:
+
+.PHONY : worldSegment/include/worldSegment/clean
+
+#=============================================================================
+# Directory level rules for directory worldSegment/src
+
+# Recursive "all" directory target.
+worldSegment/src/all: worldSegment/src/worldSegment/all
+
+.PHONY : worldSegment/src/all
+
+# Recursive "preinstall" directory target.
+worldSegment/src/preinstall: worldSegment/src/worldSegment/preinstall
+
+.PHONY : worldSegment/src/preinstall
+
+# Recursive "clean" directory target.
+worldSegment/src/clean: worldSegment/src/worldSegment/clean
+
+.PHONY : worldSegment/src/clean
+
+#=============================================================================
+# Directory level rules for directory worldSegment/src/worldSegment
+
+# Recursive "all" directory target.
+worldSegment/src/worldSegment/all:
+
+.PHONY : worldSegment/src/worldSegment/all
+
+# Recursive "preinstall" directory target.
+worldSegment/src/worldSegment/preinstall:
+
+.PHONY : worldSegment/src/worldSegment/preinstall
+
+# Recursive "clean" directory target.
+worldSegment/src/worldSegment/clean:
+
+.PHONY : worldSegment/src/worldSegment/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/glad.dir
 
 # All Build rule for target.
@@ -803,11 +901,13 @@ CMakeFiles/glad.dir/clean:
 # Target rules for target CMakeFiles/StillHope_build_1.1.dir
 
 # All Build rule for target.
-CMakeFiles/StillHope_build_1.1.dir/all: shader/CMakeFiles/shader.dir/all
 CMakeFiles/StillHope_build_1.1.dir/all: CMakeFiles/glad.dir/all
+CMakeFiles/StillHope_build_1.1.dir/all: shader/CMakeFiles/shader.dir/all
 CMakeFiles/StillHope_build_1.1.dir/all: entity/CMakeFiles/entity.dir/all
-CMakeFiles/StillHope_build_1.1.dir/all: player/CMakeFiles/player.dir/all
 CMakeFiles/StillHope_build_1.1.dir/all: perlinNoise/CMakeFiles/perlinNoise.dir/all
+CMakeFiles/StillHope_build_1.1.dir/all: player/CMakeFiles/player.dir/all
+CMakeFiles/StillHope_build_1.1.dir/all: worldSegment/CMakeFiles/worldSegment.dir/all
+CMakeFiles/StillHope_build_1.1.dir/all: world/CMakeFiles/world.dir/all
 CMakeFiles/StillHope_build_1.1.dir/all: generator/CMakeFiles/generator.dir/all
 CMakeFiles/StillHope_build_1.1.dir/all: window/CMakeFiles/window.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\StillHope_build_1.1.dir\build.make CMakeFiles/StillHope_build_1.1.dir/depend
@@ -817,7 +917,7 @@ CMakeFiles/StillHope_build_1.1.dir/all: window/CMakeFiles/window.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/StillHope_build_1.1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/StillHope_build_1.1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
 .PHONY : CMakeFiles/StillHope_build_1.1.dir/rule
@@ -863,8 +963,8 @@ shader/CMakeFiles/shader.dir/clean:
 # Target rules for target entity/CMakeFiles/entity.dir
 
 # All Build rule for target.
-entity/CMakeFiles/entity.dir/all: shader/CMakeFiles/shader.dir/all
 entity/CMakeFiles/entity.dir/all: CMakeFiles/glad.dir/all
+entity/CMakeFiles/entity.dir/all: shader/CMakeFiles/shader.dir/all
 	$(MAKE) $(MAKESILENT) -f entity\CMakeFiles\entity.dir\build.make entity/CMakeFiles/entity.dir/depend
 	$(MAKE) $(MAKESILENT) -f entity\CMakeFiles\entity.dir\build.make entity/CMakeFiles/entity.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=3,4 "Built target entity"
@@ -891,8 +991,8 @@ entity/CMakeFiles/entity.dir/clean:
 # Target rules for target player/CMakeFiles/player.dir
 
 # All Build rule for target.
-player/CMakeFiles/player.dir/all: shader/CMakeFiles/shader.dir/all
 player/CMakeFiles/player.dir/all: CMakeFiles/glad.dir/all
+player/CMakeFiles/player.dir/all: shader/CMakeFiles/shader.dir/all
 	$(MAKE) $(MAKESILENT) -f player\CMakeFiles\player.dir\build.make player/CMakeFiles/player.dir/depend
 	$(MAKE) $(MAKESILENT) -f player\CMakeFiles\player.dir\build.make player/CMakeFiles/player.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=11,12 "Built target player"
@@ -943,11 +1043,41 @@ perlinNoise/CMakeFiles/perlinNoise.dir/clean:
 .PHONY : perlinNoise/CMakeFiles/perlinNoise.dir/clean
 
 #=============================================================================
+# Target rules for target worldSegment/CMakeFiles/worldSegment.dir
+
+# All Build rule for target.
+worldSegment/CMakeFiles/worldSegment.dir/all:
+	$(MAKE) $(MAKESILENT) -f worldSegment\CMakeFiles\worldSegment.dir\build.make worldSegment/CMakeFiles/worldSegment.dir/depend
+	$(MAKE) $(MAKESILENT) -f worldSegment\CMakeFiles\worldSegment.dir\build.make worldSegment/CMakeFiles/worldSegment.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=19,20 "Built target worldSegment"
+.PHONY : worldSegment/CMakeFiles/worldSegment.dir/all
+
+# Build rule for subdir invocation for target.
+worldSegment/CMakeFiles/worldSegment.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 worldSegment/CMakeFiles/worldSegment.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
+.PHONY : worldSegment/CMakeFiles/worldSegment.dir/rule
+
+# Convenience name for target.
+worldSegment: worldSegment/CMakeFiles/worldSegment.dir/rule
+
+.PHONY : worldSegment
+
+# clean rule for target.
+worldSegment/CMakeFiles/worldSegment.dir/clean:
+	$(MAKE) $(MAKESILENT) -f worldSegment\CMakeFiles\worldSegment.dir\build.make worldSegment/CMakeFiles/worldSegment.dir/clean
+.PHONY : worldSegment/CMakeFiles/worldSegment.dir/clean
+
+#=============================================================================
 # Target rules for target world/CMakeFiles/world.dir
 
 # All Build rule for target.
-world/CMakeFiles/world.dir/all: shader/CMakeFiles/shader.dir/all
 world/CMakeFiles/world.dir/all: CMakeFiles/glad.dir/all
+world/CMakeFiles/world.dir/all: shader/CMakeFiles/shader.dir/all
+world/CMakeFiles/world.dir/all: perlinNoise/CMakeFiles/perlinNoise.dir/all
+world/CMakeFiles/world.dir/all: worldSegment/CMakeFiles/worldSegment.dir/all
+world/CMakeFiles/world.dir/all: generator/CMakeFiles/generator.dir/all
 	$(MAKE) $(MAKESILENT) -f world\CMakeFiles\world.dir\build.make world/CMakeFiles/world.dir/depend
 	$(MAKE) $(MAKESILENT) -f world\CMakeFiles\world.dir\build.make world/CMakeFiles/world.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles --progress-num=17,18 "Built target world"
@@ -955,7 +1085,7 @@ world/CMakeFiles/world.dir/all: CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
 world/CMakeFiles/world.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 world/CMakeFiles/world.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
 .PHONY : world/CMakeFiles/world.dir/rule
@@ -974,6 +1104,8 @@ world/CMakeFiles/world.dir/clean:
 # Target rules for target generator/CMakeFiles/generator.dir
 
 # All Build rule for target.
+generator/CMakeFiles/generator.dir/all: CMakeFiles/glad.dir/all
+generator/CMakeFiles/generator.dir/all: shader/CMakeFiles/shader.dir/all
 generator/CMakeFiles/generator.dir/all: perlinNoise/CMakeFiles/perlinNoise.dir/all
 	$(MAKE) $(MAKESILENT) -f generator\CMakeFiles\generator.dir\build.make generator/CMakeFiles/generator.dir/depend
 	$(MAKE) $(MAKESILENT) -f generator\CMakeFiles\generator.dir\build.make generator/CMakeFiles/generator.dir/build
@@ -982,7 +1114,7 @@ generator/CMakeFiles/generator.dir/all: perlinNoise/CMakeFiles/perlinNoise.dir/a
 
 # Build rule for subdir invocation for target.
 generator/CMakeFiles/generator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 generator/CMakeFiles/generator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
 .PHONY : generator/CMakeFiles/generator.dir/rule
@@ -1001,11 +1133,13 @@ generator/CMakeFiles/generator.dir/clean:
 # Target rules for target window/CMakeFiles/window.dir
 
 # All Build rule for target.
-window/CMakeFiles/window.dir/all: shader/CMakeFiles/shader.dir/all
 window/CMakeFiles/window.dir/all: CMakeFiles/glad.dir/all
+window/CMakeFiles/window.dir/all: shader/CMakeFiles/shader.dir/all
 window/CMakeFiles/window.dir/all: entity/CMakeFiles/entity.dir/all
-window/CMakeFiles/window.dir/all: player/CMakeFiles/player.dir/all
 window/CMakeFiles/window.dir/all: perlinNoise/CMakeFiles/perlinNoise.dir/all
+window/CMakeFiles/window.dir/all: player/CMakeFiles/player.dir/all
+window/CMakeFiles/window.dir/all: worldSegment/CMakeFiles/worldSegment.dir/all
+window/CMakeFiles/window.dir/all: world/CMakeFiles/world.dir/all
 window/CMakeFiles/window.dir/all: generator/CMakeFiles/generator.dir/all
 	$(MAKE) $(MAKESILENT) -f window\CMakeFiles\window.dir\build.make window/CMakeFiles/window.dir/depend
 	$(MAKE) $(MAKESILENT) -f window\CMakeFiles\window.dir\build.make window/CMakeFiles/window.dir/build
@@ -1014,7 +1148,7 @@ window/CMakeFiles/window.dir/all: generator/CMakeFiles/generator.dir/all
 
 # Build rule for subdir invocation for target.
 window/CMakeFiles/window.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 window/CMakeFiles/window.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\UserData\Documents\vscode-workspace\StillHope\StillHope_build_1.1\build\CMakeFiles 0
 .PHONY : window/CMakeFiles/window.dir/rule

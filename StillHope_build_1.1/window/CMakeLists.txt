@@ -21,10 +21,10 @@ add_subdirectory("include")
 add_subdirectory("src") 
 target_link_libraries( 
    "${LIB_NAME}"
-    shader
+    #shader
     entity
     player
-    generator
+    world
     libglfw3.a 
     libgdi32.a
     glad

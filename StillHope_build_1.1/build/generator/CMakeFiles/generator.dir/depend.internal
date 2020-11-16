@@ -3,4 +3,6 @@
 
 generator/CMakeFiles/generator.dir/src/generator/generator.cpp.obj
  ../generator/include/generator/generator.hpp
+ ../perlinNoise/include/perlinNoise/perlinNoise.hpp
+ ../shader/include/shader/shader.hpp
  D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/generator/src/generator/generator.cpp

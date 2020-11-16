@@ -1,1 +1,1 @@
- ../lib/libshader-d.dll.a -Wl,-Bstatic -lglfw3 -lgdi32 -Wl,-Bdynamic ../lib/libglad.dll.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ ../lib/libgenerator-d.dll.a ../lib/libworldSegment-d.dll.a ../lib/libshader-d.dll.a -Wl,-Bstatic -lglfw3 -lgdi32 -Wl,-Bdynamic ../lib/libglad.dll.a ../lib/libperlinNoise-d.dll.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

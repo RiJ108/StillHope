@@ -4,7 +4,10 @@
 window/CMakeFiles/window.dir/src/window/window.cpp.obj
  ../entity/include/entity/entity.hpp
  ../generator/include/generator/generator.hpp
+ ../perlinNoise/include/perlinNoise/perlinNoise.hpp
  ../player/include/player/player.hpp
  ../shader/include/shader/shader.hpp
  ../window/include/window/window.hpp
+ ../world/include/world/world.hpp
+ ../worldSegment/include/worldSegment/worldSegment.hpp
  D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/window/src/window/window.cpp

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "window/window.hpp"
+#include "world/world.hpp"
 
 using namespace std;
 

@@ -19,11 +19,15 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "generator"
   "../perlinNoise/include"
   "perlinNoise"
+  "../shader/include"
+  "shader"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/perlinNoise/CMakeFiles/perlinNoise.dir/DependInfo.cmake"
+  "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/shader/CMakeFiles/shader.dir/DependInfo.cmake"
+  "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/CMakeFiles/glad.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -98,8 +98,11 @@ world_EXTERNAL_OBJECTS =
 
 bin/libworld-d.dll: world/CMakeFiles/world.dir/src/world/world.cpp.obj
 bin/libworld-d.dll: world/CMakeFiles/world.dir/build.make
+bin/libworld-d.dll: lib/libgenerator-d.dll.a
+bin/libworld-d.dll: lib/libworldSegment-d.dll.a
 bin/libworld-d.dll: lib/libshader-d.dll.a
 bin/libworld-d.dll: lib/libglad.dll.a
+bin/libworld-d.dll: lib/libperlinNoise-d.dll.a
 bin/libworld-d.dll: world/CMakeFiles/world.dir/linklibs.rsp
 bin/libworld-d.dll: world/CMakeFiles/world.dir/objects1.rsp
 bin/libworld-d.dll: world/CMakeFiles/world.dir/link.txt

@@ -2,31 +2,27 @@
 #define GENERATOR_HPP
 
 #include <iostream>
-#include <pthread.h>
-#include <semaphore.h>
-//#include <unistd.h>
+#include <vector>
+#include "shader/shader.hpp"
+#include "perlinNoise/perlinNoise.hpp"
 
 using namespace std;
-typedef void * (*THREADFUNCPTR)(void *);
+/*typedef void * (*THREADFUNCPTR)(void *);
 void* genThreadRun(void* obj_param);
-void* loadThreadRun(void* obj_param);
+void* loadThreadRun(void* obj_param);*/
 
 class Generator{
 public:
     Generator();
-    void init();
-    bool isInit();
-    sem_t* getMutex(int who); //0 is gen and 1 is load
-    void setNeedGen(bool state);
-    bool getNeedGen();
+    void generate(vector<float>* vertices, vector<int>* indices, int coordX, int coordZ, int dim, float step);
+    vector<float> generateVertices(int coordX, int coordZ, int dim, float step);
+    void generateIndices(int dim);
+    vector<int> getIndicesRef();
+    int getDimOfCircle(int r);
 private:
     unsigned int seed;
-    bool isInit_ = false;
-    bool needGen = false;
-    pthread_t genThread;
-    pthread_t loadThread;
-    sem_t genMutex;
-    sem_t loadMutex;
+    PerlinNoise perlinNoise;
+    vector<int> indices;
 };
 
 #endif 

@@ -2,13 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/libentity-d.dll"
+			"path" : "bin/libworld-d.dll"
 		},
 		{
-			"path" : "lib/libentity-d.dll.a"
+			"path" : "lib/libworld-d.dll.a"
 		},
 		{
-			"path" : "bin/libentity-d.pdb"
+			"path" : "bin/libworld-d.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -23,7 +23,7 @@
 		],
 		"files" : 
 		[
-			"entity/CMakeLists.txt"
+			"world/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -74,18 +74,18 @@
 			"defines" : 
 			[
 				{
-					"define" : "entity_EXPORTS"
+					"define" : "world_EXPORTS"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
-					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/entity/include"
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/world/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/entity"
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/world"
 				},
 				{
 					"backtrace" : 2,
@@ -94,6 +94,30 @@
 				{
 					"backtrace" : 2,
 					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/shader"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/generator/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/generator"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/perlinNoise/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/perlinNoise"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/worldSegment/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/worldSegment"
 				}
 			],
 			"language" : "CXX",
@@ -107,14 +131,26 @@
 	[
 		{
 			"backtrace" : 2,
+			"id" : "glad::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "shader::@2bbbf1053401b8be33b8"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "glad::@6890427a1f51a3e7e1df"
+			"id" : "perlinNoise::@6616263045787052ce45"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "worldSegment::@5f574d2acbbff600729f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "generator::@57ab67fb902b11eae714"
 		}
 	],
-	"id" : "entity::@d6c2e1204b3d8d4a55e1",
+	"id" : "world::@420baf620e3fcd9b3715",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -122,6 +158,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "..\\lib\\libgenerator-d.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "..\\lib\\libworldSegment-d.dll.a",
+				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
@@ -149,18 +195,22 @@
 				"role" : "libraries"
 			},
 			{
+				"fragment" : "..\\lib\\libperlinNoise-d.dll.a",
+				"role" : "libraries"
+			},
+			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "entity",
-	"nameOnDisk" : "libentity-d.dll",
+	"name" : "world",
+	"nameOnDisk" : "libworld-d.dll",
 	"paths" : 
 	{
-		"build" : "entity",
-		"source" : "entity"
+		"build" : "world",
+		"source" : "world"
 	},
 	"sourceGroups" : 
 	[
@@ -183,13 +233,13 @@
 	[
 		{
 			"backtrace" : 4,
-			"path" : "entity/include/entity/entity.hpp",
+			"path" : "world/include/world/world.hpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
-			"path" : "entity/src/entity/entity.cpp",
+			"path" : "world/src/world/world.cpp",
 			"sourceGroupIndex" : 1
 		}
 	],

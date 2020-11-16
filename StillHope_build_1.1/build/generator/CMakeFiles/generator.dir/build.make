@@ -99,6 +99,8 @@ generator_EXTERNAL_OBJECTS =
 bin/libgenerator-d.dll: generator/CMakeFiles/generator.dir/src/generator/generator.cpp.obj
 bin/libgenerator-d.dll: generator/CMakeFiles/generator.dir/build.make
 bin/libgenerator-d.dll: lib/libperlinNoise-d.dll.a
+bin/libgenerator-d.dll: lib/libshader-d.dll.a
+bin/libgenerator-d.dll: lib/libglad.dll.a
 bin/libgenerator-d.dll: generator/CMakeFiles/generator.dir/linklibs.rsp
 bin/libgenerator-d.dll: generator/CMakeFiles/generator.dir/objects1.rsp
 bin/libgenerator-d.dll: generator/CMakeFiles/generator.dir/link.txt

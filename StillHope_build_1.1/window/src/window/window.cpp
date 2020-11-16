@@ -47,14 +47,23 @@ void Window::loop(){
     vec3 position = vec3(-2.0f, 0.0f, 0.0f);
     vec3 up = vec3(0.0f, 1.0f, 0.0f);
     vec3 front = vec3(1.0f, 0.0f, 0.0f);
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
     //**shader3D set-up
     shader3D.use();
     shader3D.setVec3("objectColor", vec3(1.0f, 0.5f, 0.31f));
     shader3D.setVec3("lightColor", vec3(1.0f, 1.0f, 1.0f));
-    shader3D.setVec3("lightPos", vec3(-10.0f, 5.0f, -20.0f));
+    shader3D.setVec3("lightPos", vec3(25.0f, 50.0f, 25.0f));
     shader3D.setMat4("projection", perspective(radians(FOV), (float)SCR_WIDTH/SCR_HEIGHT, 0.1f, 10000.0f));
     shader3D.setMat4("model", mat4(1.0f));
+
+    //**World things
+    world.genBuffers();
+    world.fillBuffers();
+
+    //**Player stuff
+    gPlayer = &player;
+    player.setPosition(player.getPosition() + vec3(0.0f, 20.0f, 0.0f));
 
     while(!glfwWindowShouldClose(window)){
         //***Process timing
@@ -77,7 +86,6 @@ void Window::loop(){
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 
-
         //**Setting shader's uniform
         shader3D.use();
         shader3D.setVec3("frontView", player.getFront());
@@ -85,12 +93,18 @@ void Window::loop(){
         shader3D.setVec3("viewPos", player.getPosition());
 
         //**Rendering calls
-        entity.render(shader3D);
+        //shader3D.setVec3("objectColor", vec3(1.0f, 0.5f, 0.31f));
+        //glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+        //entity.render(shader3D);
+        shader3D.setVec3("objectColor", vec3(1.0f, 1.0f, 1.0f));
+        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+        world.render(shader3D);
+        //glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
         
         //**Sleeping for capping refresh rate
         deltaTime = (double)1/fpsCap - deltaTime;
         if(deltaTime > 0)
-            Sleep(deltaTime*1000);
+            //Sleep(deltaTime*1000);
 
         //***Polling and swapping of buffers
         glfwSwapBuffers(window);
@@ -105,22 +119,10 @@ Player Window::getPlayer(){
 void Window::processInputs(GLFWwindow* window){
     if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
-    if(glfwGetKey(window, GLFW_KEY_F1) == GLFW_PRESS){
-        if(!generator.isInit())
-            generator.init();
-    }
-    if(glfwGetKey(window, GLFW_KEY_F2) == GLFW_PRESS){
-        if(generator.isInit()){
-            if(!generator.getNeedGen()){
-                cout << "WINDOW::Manual genThread call" << endl;
-                generator.setNeedGen(true);
-                sem_post(generator.getMutex(0));
-            }
-        }else   cout << "WINDOW::Generator not initiated yet, cannot comply !" << endl;
-    }
 
     //_________________________________________________________________________________
-
+    if(glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS)
+        player.running();
     if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
         player.moveK('Z', deltaTime);
     if(glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
@@ -129,6 +131,10 @@ void Window::processInputs(GLFWwindow* window){
         player.moveK('D', deltaTime);
     if(glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
         player.moveK('Q', deltaTime);
+    if(glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
+        player.moveK('u', deltaTime);
+    if(glfwGetKey(window, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS)
+        player.moveK('d', deltaTime);
 }
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods){
@@ -136,10 +142,8 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 }
 
 void mouse_callback(GLFWwindow* window, double xpos, double ypos){
-    //globalWindow->getPlayer()->moveM(xpos, ypos);
-    if(glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS){
-        //globalWindow->getPlayer()->moveM(xpos, ypos);
-    }
+    //if(glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS)
+    gPlayer->moveM(xpos, ypos);
 }
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height){

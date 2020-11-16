@@ -94,6 +94,14 @@
 				{
 					"backtrace" : 2,
 					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/perlinNoise"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/shader/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/shader"
 				}
 			],
 			"language" : "CXX",
@@ -105,6 +113,14 @@
 	],
 	"dependencies" : 
 	[
+		{
+			"backtrace" : 2,
+			"id" : "glad::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "shader::@2bbbf1053401b8be33b8"
+		},
 		{
 			"backtrace" : 2,
 			"id" : "perlinNoise::@6616263045787052ce45"
@@ -120,12 +136,25 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-Bstatic",
+				"backtrace" : 2,
+				"fragment" : "..\\lib\\libperlinNoise-d.dll.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-lpthread",
+				"fragment" : "..\\lib\\libshader-d.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bstatic",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lglfw3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lgdi32",
 				"role" : "libraries"
 			},
 			{
@@ -133,8 +162,7 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
-				"fragment" : "..\\lib\\libperlinNoise-d.dll.a",
+				"fragment" : "..\\lib\\libglad.dll.a",
 				"role" : "libraries"
 			},
 			{

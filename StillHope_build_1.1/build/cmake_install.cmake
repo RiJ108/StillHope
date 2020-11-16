@@ -59,6 +59,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/worldSegment/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("D:/UserData/Documents/vscode-workspace/StillHope/StillHope_build_1.1/build/world/cmake_install.cmake")
 endif()
 
